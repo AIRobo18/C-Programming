@@ -1,0 +1,2 @@
+firstvar = 3;
+print firstvar + 1;

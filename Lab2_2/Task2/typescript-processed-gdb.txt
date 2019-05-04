@@ -1,0 +1,118 @@
+Script started on Thu 02 Feb 2017 12:46:19 PM PST
+cistudent@NetworkingLab:~/Desktop/Task2$ ulimit -c unlimited
+cistudent@NetworkingLab:~/Desktop/Task2$ gcc -g crash.c -o crash
+cistudent@NetworkingLab:~/Desktop/Task2$ ./crash
+What's your first name?
+Robert
+What's your last name?
+Hello (null) (null)!
+cistudent@NetworkingLab:~/Desktop/Task2$ gbd cash
+No command 'gbd' found, did you mean:
+ Command 'rbd' from package 'ceph-common' (main)
+ Command 'gbp' from package 'git-buildpackage' (universe)
+ Command 'gid' from package 'id-utils' (universe)
+ Command 'dbd' from package 'netatalk' (universe)
+ Command 'god' from package 'ruby-god' (universe)
+ Command 'gdb' from package 'gdb' (main)
+ Command 'gb' from package 'gb' (universe)
+ Command 'gwd' from package 'geneweb' (universe)
+ Command 'gld' from package 'postfix-gld' (universe)
+gbd: command not found
+cistudent@NetworkingLab:~/Desktop/Task2$ gdb crash
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from crash...done.
+(gdb) where
+No stack.
+(gdb) list
+3	#include <string.h>
+4
+5	typedef struct name
+6	{
+7	    char *first, *last;
+8	} NAME;
+9
+10	typedef NAME	    *NAME_PTR;
+11
+12	void get_name(NAME_PTR);
+(gdb)
+13
+14	int main(void)
+15	{
+16	    NAME_PTR me;
+17	    me = malloc(sizeof(NAME));
+18	    get_name(me);
+19	    printf("Hello %s %s!\n", me->first, me->last);
+20	}
+21
+22	void get_name(NAME_PTR ptr)
+(gdb)
+23	{
+24	    printf("What's your first name?\n");
+25	    scanf("%s", ptr->first);
+26	    printf("What's your last name?\n");
+27	    scanf("%s", ptr->last);
+28	}
+(gdb)
+Line number 29 out of range; crash.c has 28 lines.
+(gdb) run
+Starting program: /home/cistudent/Desktop/Task2/crash
+What's your first name?
+Robert
+What's your last name?
+Hello (null) (null)!
+[Inferior 1 (process 5183) exited normally]
+(gdb) break 32
+No line 32 in the current file.
+Make breakpoint pending on future shared library load? (y or [n]) yreak
+Breakpoint 1 (32) pending.
+(gdb) run
+Starting program: /home/cistudent/Desktop/Task2/crash
+What's your first name?
+Robert
+What's your last name?
+Hello (null) (null)!
+[Inferior 1 (process 5196) exited normally]
+(gdb) break
+No default breakpoint address now.
+(gdb) breka 15
+Undefined command: "breka".  Try "help".
+(gdb) break 15
+Breakpoint 2 at 0x40062e: file crash.c, line 15.
+(gdb) run
+Starting program: /home/cistudent/Desktop/Task2/crash
+
+Breakpoint 2, main () at crash.c:17
+17	    me = malloc(sizeof(NAME));
+(gdb) delete break
+Delete all breakpoints? (y or n) y
+(gdb) break 16
+Breakpoint 3 at 0x40062e: file crash.c, line 16.
+(gdb) delete break
+Delete all breakpoints? (y or n) y
+(gdb) break 32
+No line 32 in the current file.
+Make breakpoint pending on future shared library load? (y or [n]) n
+(gdb) delete break
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 5197] will be killed.
+
+Quit anyway? (y or n) y
+cistudent@NetworkingLab:~/Desktop/Task2$ exit
+exit
+
+Script done on Thu 02 Feb 2017 12:56:54 PM PST

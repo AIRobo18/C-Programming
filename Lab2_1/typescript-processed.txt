@@ -1,0 +1,1167 @@
+Script started on Thu 26 Jan 2017 02:34:54 PM PST
+cistudent@NetworkingLab:~/Desktop$ gcc stocks.c -o stocks
+cistudent@NetworkingLab:~/Desktop$ ./stocks
+TURN #0
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.00
+2. Stone			  $2.50
+3. Plastic			  $5.00
+4. Glass			  $10.00
+5. Iron 			  $25.00
+6. Steel			  $50.00
+7. Gold 			  $100.00
+8. Diamond			  $130.00
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 15.00
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 1
+
+~~~~~~~~~~~~~~~~~Buy Options~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.00
+2. Stone			  $2.50
+3. Plastic			  $5.00
+4. Glass			  $10.00
+5. Iron 			  $25.00
+6. Steel			  $50.00
+7. Gold 			  $100.00
+8. Diamond			  $130.00
+Your available cash: 15.00
+Enter the number of the stock you would like to invest in: 3
+Enter the amount of stock you wish to buy: 1
+Your available cash after the transaction: 10.00
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 1
+
+~~~~~~~~~~~~~~~~~Buy Options~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.00
+2. Stone			  $2.50
+3. Plastic			  $5.00
+4. Glass			  $10.00
+5. Iron 			  $25.00
+6. Steel			  $50.00
+7. Gold 			  $100.00
+8. Diamond			  $130.00
+Your available cash: 10.00
+Enter the number of the stock you would like to invest in: 2
+Enter the amount of stock you wish to buy: 3
+Your available cash after the transaction: 2.50
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #1
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.13
+2. Stone			  $2.08
+3. Plastic			  $5.85
+4. Glass			  $8.60
+5. Iron 			  $28.75
+6. Steel			  $56.00
+7. Gold 			  $94.00
+8. Diamond			  $105.30
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  3		  $6.23
+3. Plastic			  1		  $5.85
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 2.50
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #2
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.31
+2. Stone			  $2.41
+3. Plastic			  $6.20
+4. Glass			  $8.69
+5. Iron 			  $32.78
+6. Steel			  $61.04
+7. Gold 			  $104.34
+8. Diamond			  $129.52
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  3		  $7.22
+3. Plastic			  1		  $6.20
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 2.50
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 2
+
+~~~~~~~~~~~~~~~~~Sell Options~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  3		  $7.22
+3. Plastic			  1		  $6.20
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Enter the number of the stock you would like to sell from: 2
+Enter the quantity of stock you wish to sell: 3
+Your available cash after the transaction: 9.72
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 2
+
+~~~~~~~~~~~~~~~~~Sell Options~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  1		  $6.20
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Enter the number of the stock you would like to sell from: 3
+Enter the quantity of stock you wish to sell: 1
+Your available cash after the transaction: 15.92
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 1
+
+~~~~~~~~~~~~~~~~~Buy Options~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.31
+2. Stone			  $2.41
+3. Plastic			  $6.20
+4. Glass			  $8.69
+5. Iron 			  $32.78
+6. Steel			  $61.04
+7. Gold 			  $104.34
+8. Diamond			  $129.52
+Your available cash: 15.92
+Enter the number of the stock you would like to invest in: 1
+Enter the amount of stock you wish to buy: 4
+Your available cash after the transaction: 10.68
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 1
+
+~~~~~~~~~~~~~~~~~Buy Options~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.31
+2. Stone			  $2.41
+3. Plastic			  $6.20
+4. Glass			  $8.69
+5. Iron 			  $32.78
+6. Steel			  $61.04
+7. Gold 			  $104.34
+8. Diamond			  $129.52
+Your available cash: 10.68
+Enter the number of the stock you would like to invest in: 4
+Enter the amount of stock you wish to buy: 1
+Your available cash after the transaction: 1.99
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #3
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.23
+2. Stone			  $2.91
+3. Plastic			  $6.20
+4. Glass			  $9.82
+5. Iron 			  $29.50
+6. Steel			  $48.83
+7. Gold 			  $107.47
+8. Diamond			  $120.45
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  4		  $4.93
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  1		  $9.82
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 1.99
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #4
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.15
+2. Stone			  $3.20
+3. Plastic			  $6.20
+4. Glass			  $11.88
+5. Iron 			  $34.81
+6. Steel			  $43.46
+7. Gold 			  $127.89
+8. Diamond			  $131.29
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  4		  $4.58
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  1		  $11.88
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 1.99
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 2
+
+~~~~~~~~~~~~~~~~~Sell Options~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  4		  $4.58
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  1		  $11.88
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Enter the number of the stock you would like to sell from: 4
+Enter the quantity of stock you wish to sell: 1
+Your available cash after the transaction: 13.87
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #5
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.13
+2. Stone			  $3.56
+3. Plastic			  $7.44
+4. Glass			  $10.93
+5. Iron 			  $34.11
+6. Steel			  $39.11
+7. Gold 			  $125.33
+8. Diamond			  $119.48
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  4		  $4.54
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 13.87
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #6
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.94
+2. Stone			  $2.81
+3. Plastic			  $8.78
+4. Glass			  $13.33
+5. Iron 			  $39.23
+6. Steel			  $40.68
+7. Gold 			  $150.40
+8. Diamond			  $103.94
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  4		  $3.77
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 13.87
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #7
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.96
+2. Stone			  $2.67
+3. Plastic			  $6.76
+4. Glass			  $15.86
+5. Iron 			  $40.01
+6. Steel			  $43.53
+7. Gold 			  $130.85
+8. Diamond			  $126.81
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  4		  $3.84
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 13.87
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #8
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.88
+2. Stone			  $2.99
+3. Plastic			  $8.11
+4. Glass			  $13.64
+5. Iron 			  $31.21
+6. Steel			  $50.49
+7. Gold 			  $157.02
+8. Diamond			  $133.15
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  4		  $3.53
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 13.87
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #9
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.90
+2. Stone			  $3.50
+3. Plastic			  $9.90
+4. Glass			  $10.64
+5. Iron 			  $26.22
+6. Steel			  $48.98
+7. Gold 			  $147.59
+8. Diamond			  $122.50
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  4		  $3.61
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 13.87
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #10
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.94
+2. Stone			  $3.11
+3. Plastic			  $8.81
+4. Glass			  $10.00
+5. Iron 			  $31.46
+6. Steel			  $42.61
+7. Gold 			  $159.40
+8. Diamond			  $120.05
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  4		  $3.75
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 13.87
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #11
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.02
+2. Stone			  $3.49
+3. Plastic			  $8.28
+4. Glass			  $8.70
+5. Iron 			  $30.52
+6. Steel			  $45.59
+7. Gold 			  $137.09
+8. Diamond			  $136.86
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  4		  $4.09
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 13.87
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #12
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.98
+2. Stone			  $2.93
+3. Plastic			  $6.38
+4. Glass			  $8.88
+5. Iron 			  $22.89
+6. Steel			  $56.53
+7. Gold 			  $112.41
+8. Diamond			  $140.96
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  4		  $3.92
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 13.87
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #13
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.17
+2. Stone			  $2.37
+3. Plastic			  $6.89
+4. Glass			  $6.92
+5. Iron 			  $23.57
+6. Steel			  $43.53
+7. Gold 			  $107.91
+8. Diamond			  $115.59
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  4		  $4.67
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 13.87
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 2
+
+~~~~~~~~~~~~~~~~~Sell Options~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  4		  $4.67
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Enter the number of the stock you would like to sell from: 1
+Enter the quantity of stock you wish to sell: 4
+Your available cash after the transaction: 18.54
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #14
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.07
+2. Stone			  $2.66
+3. Plastic			  $7.16
+4. Glass			  $6.02
+5. Iron 			  $29.23
+6. Steel			  $38.74
+7. Gold 			  $120.86
+8. Diamond			  $125.99
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 18.54
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 1
+
+~~~~~~~~~~~~~~~~~Buy Options~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $1.07
+2. Stone			  $2.66
+3. Plastic			  $7.16
+4. Glass			  $6.02
+5. Iron 			  $29.23
+6. Steel			  $38.74
+7. Gold 			  $120.86
+8. Diamond			  $125.99
+Your available cash: 18.54
+Enter the number of the stock you would like to invest in: 32
+Enter the amount of stock you wish to buy: 2
+Your available cash after the transaction: 4.21
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #15
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.83
+2. Stone			  $2.18
+3. Plastic			  $8.81
+4. Glass			  $5.96
+5. Iron 			  $33.91
+6. Steel			  $32.54
+7. Gold 			  $108.78
+8. Diamond			  $109.61
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  2		  $17.62
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 4.21
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 2
+
+~~~~~~~~~~~~~~~~~Sell Options~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  2		  $17.62
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Enter the number of the stock you would like to sell from: 3
+Enter the quantity of stock you wish to sell: 2
+Your available cash after the transaction: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #16
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.77
+2. Stone			  $2.03
+3. Plastic			  $10.22
+4. Glass			  $5.61
+5. Iron 			  $31.87
+6. Steel			  $40.03
+7. Gold 			  $134.88
+8. Diamond			  $96.46
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #17
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.62
+2. Stone			  $2.17
+3. Plastic			  $9.40
+4. Glass			  $6.17
+5. Iron 			  $35.38
+6. Steel			  $46.03
+7. Gold 			  $157.81
+8. Diamond			  $77.17
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #18
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.64
+2. Stone			  $2.12
+3. Plastic			  $8.93
+4. Glass			  $6.29
+5. Iron 			  $39.98
+6. Steel			  $37.75
+7. Gold 			  $138.88
+8. Diamond			  $88.74
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #19
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.58
+2. Stone			  $1.83
+3. Plastic			  $8.13
+4. Glass			  $5.16
+5. Iron 			  $37.98
+6. Steel			  $40.01
+7. Gold 			  $134.71
+8. Diamond			  $102.94
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #20
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.44
+2. Stone			  $1.61
+3. Plastic			  $7.07
+4. Glass			  $4.95
+5. Iron 			  $33.80
+6. Steel			  $34.41
+7. Gold 			  $149.53
+8. Diamond			  $97.80
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #21
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.53
+2. Stone			  $1.29
+3. Plastic			  $5.66
+4. Glass			  $5.35
+5. Iron 			  $40.56
+6. Steel			  $25.81
+7. Gold 			  $170.46
+8. Diamond			  $95.84
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #22
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.52
+2. Stone			  $1.08
+3. Plastic			  $4.36
+4. Glass			  $4.60
+5. Iron 			  $37.72
+6. Steel			  $23.23
+7. Gold 			  $132.96
+8. Diamond			  $105.42
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #23
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.53
+2. Stone			  $1.02
+3. Plastic			  $5.18
+4. Glass			  $5.66
+5. Iron 			  $29.42
+6. Steel			  $21.14
+7. Gold 			  $154.23
+8. Diamond			  $83.28
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #24
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.56
+2. Stone			  $0.79
+3. Plastic			  $5.29
+4. Glass			  $6.84
+5. Iron 			  $26.78
+6. Steel			  $18.81
+7. Gold 			  $140.35
+8. Diamond			  $71.63
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #25
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.53
+2. Stone			  $0.78
+3. Plastic			  $6.45
+4. Glass			  $6.16
+5. Iron 			  $26.51
+6. Steel			  $20.88
+7. Gold 			  $161.41
+8. Diamond			  $88.82
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #26
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.64
+2. Stone			  $0.93
+3. Plastic			  $5.68
+4. Glass			  $5.67
+5. Iron 			  $22.80
+6. Steel			  $19.00
+7. Gold 			  $127.51
+8. Diamond			  $101.25
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #27
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.72
+2. Stone			  $1.16
+3. Plastic			  $6.47
+4. Glass			  $6.57
+5. Iron 			  $20.97
+6. Steel			  $20.14
+7. Gold 			  $153.01
+8. Diamond			  $123.52
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #28
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.80
+2. Stone			  $1.13
+3. Plastic			  $7.76
+4. Glass			  $5.13
+5. Iron 			  $23.91
+6. Steel			  $17.52
+7. Gold 			  $139.24
+8. Diamond			  $102.52
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #29
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.89
+2. Stone			  $1.00
+3. Plastic			  $7.76
+4. Glass			  $4.46
+5. Iron 			  $18.17
+6. Steel			  $16.12
+7. Gold 			  $119.75
+8. Diamond			  $76.89
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+
+Options:
+1) Buy Stock
+2) Sell Stock
+3) End Turn
+Enter your choice: 3
+Turn ended
+Market prices will change
+TURN #30
+~~~~~~~~~~~~~~~~~The Market~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Price
+1. Wood 			  $0.77
+2. Stone			  $0.99
+3. Plastic			  $7.22
+4. Glass			  $4.33
+5. Iron 			  $21.08
+6. Steel			  $15.64
+7. Gold 			  $105.38
+8. Diamond			  $81.51
+
+~~~~~~~~~~~~~~~~~Inventory~~~~~~~~~~~~~~~~~
+Stock Name		       Stock Quantity  Stock Value
+1. Wood 			  0		  $0.00
+2. Stone			  0		  $0.00
+3. Plastic			  0		  $0.00
+4. Glass			  0		  $0.00
+5. Iron 			  0		  $0.00
+6. Steel			  0		  $0.00
+7. Gold 			  0		  $0.00
+8. Diamond			  0		  $0.00
+Your available cash: 21.83
+cistudent@NetworkingLab:~/Desktop$ 3
+3: command not found
+3cistudent@NetworkingLab:~/Desktop$ exit
+exit
+
+Script done on Thu 26 Jan 2017 02:42:04 PM PST

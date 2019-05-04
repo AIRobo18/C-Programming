@@ -1,0 +1,857 @@
+Script started on Mon 06 Feb 2017 11:28:25 AM PST
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g c[Ksub. c -o c[Ksub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gdb ./sub
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./sub...done.
+(gdb) run
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub 
+
+Program received signal SIGSEGV, Segmentation fault.
+__strcmp_sse2_unaligned ()
+    at ../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S:31
+31	../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S: No such file or directory.
+(gdb) backtrace
+#0  __strcmp_sse2_unaligned ()
+    at ../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S:31
+#1  0x000000000040072d in main (argc=1, argv=0x7fffffffde58) at sub.c:17
+(gdb) rtun [K[K[K[K[Krun ./sub -h
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub ./sub -h
+
+
+^C
+Program received signal SIGINT, Interrupt.
+__lll_lock_wait_private ()
+    at ../sysdeps/unix/sysv/linux/x86_64/lowlevellock.S:95
+95	../sysdeps/unix/sysv/linux/x86_64/lowlevellock.S: No such file or directory.
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 5953] will be killed.
+
+Quit anyway? (y or n) y
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub
+Segmentation fault (core dumped)
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub -h
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub -h[Kgdb ./subcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [3P./sub -h
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+
+
+
+
+
+
+
+
+
+
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub -h[K[K[K
+Segmentation fault (core dumped)
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ cd 4[K[K
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ cd d[KDek[Ksktop/
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Desktop[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Desktop[00m$ ls
+argc-argv.c
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Desktop[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Desktop[00m$ gcc argc-argv.c -o argc-argv.c [K[K[K
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Desktop[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Desktop[00m$ ./argc-argv 
+Argument #0 is -> |./argc-argv|
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Desktop[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Desktop[00m$ ./argc-argv 0 hello
+Argument #0 is -> |./argc-argv|
+Argument #1 is -> |0|
+Argument #2 is -> |hello|
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Desktop[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Desktop[00m$ cd Docu[K[K[K[K[K[K[Kcd ..
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ ls
+[0m[01;34mDesktop[0m    [01;34mDownloads[0m         [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m
+[01;34mDocuments[0m  examples.desktop  [01;34mPictures[0m  [01;34mTemplates[0m
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ cd 
+.cache/    Desktop/   .gconf/    .local/    Pictures/  Templates/ 
+.compiz/   Documents/ .gnome/    .mozilla/  .pki/      Videos/    
+.config/   Downloads/ .gnupg/    Music/     Public/    
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ cd 
+.cache/    Desktop/   .gconf/    .local/    Pictures/  Templates/ 
+.compiz/   Documents/ .gnome/    .mozilla/  .pki/      Videos/    
+.config/   Downloads/ .gnupg/    Music/     Public/    
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ cd 
+.cache/    Desktop/   .gconf/    .local/    Pictures/  Templates/ 
+.compiz/   Documents/ .gnome/    .mozilla/  .pki/      Videos/    
+.config/   Downloads/ .gnupg/    Music/     Public/    
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ cd 
+.cache/    Desktop/   .gconf/    .local/    Pictures/  Templates/ 
+.compiz/   Documents/ .gnome/    .mozilla/  .pki/      Videos/    
+.config/   Downloads/ .gnupg/    Music/     Public/    
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ cd 
+.cache/    Desktop/   .gconf/    .local/    Pictures/  Templates/ 
+.compiz/   Documents/ .gnome/    .mozilla/  .pki/      Videos/    
+.config/   Downloads/ .gnupg/    Music/     Public/    
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ cd 
+.cache/    Desktop/   .gconf/    .local/    Pictures/  Templates/ 
+.compiz/   Documents/ .gnome/    .mozilla/  .pki/      Videos/    
+.config/   Downloads/ .gnupg/    Music/     Public/    
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ cd 
+.cache/    Desktop/   .gconf/    .local/    Pictures/  Templates/ 
+.compiz/   Documents/ .gnome/    .mozilla/  .pki/      Videos/    
+.config/   Downloads/ .gnupg/    Music/     Public/    
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ cd 
+.cache/    Desktop/   .gconf/    .local/    Pictures/  Templates/ 
+.compiz/   Documents/ .gnome/    .mozilla/  .pki/      Videos/    
+.config/   Downloads/ .gnupg/    Music/     Public/    
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ cd 
+.cache/    Desktop/   .gconf/    .local/    Pictures/  Templates/ 
+.compiz/   Documents/ .gnome/    .mozilla/  .pki/      Videos/    
+.config/   Downloads/ .gnupg/    Music/     Public/    
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ cd 
+.cache/    Desktop/   .gconf/    .local/    Pictures/  Templates/ 
+.compiz/   Documents/ .gnome/    .mozilla/  .pki/      Videos/    
+.config/   Downloads/ .gnupg/    Music/     Public/    
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ cd 
+.cache/    Desktop/   .gconf/    .local/    Pictures/  Templates/ 
+.compiz/   Documents/ .gnome/    .mozilla/  .pki/      Videos/    
+.config/   Downloads/ .gnupg/    Music/     Public/    
+]0;robertubuntu@robertubuntu-VirtualBox: ~[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~[00m$ cd docu[K[K[K[K[KD[K DOcu[K[K[K[KDocuments/
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents[00m$ ls
+[0m[01;34mComp362[0m
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents[00m$ cd Comp362/
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362[00m$ ls
+[0m[01;34mLab1[0m  [01;34mLab2[0m
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362[00m$ cd l[KAL[K[KLab2
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2[00m$ ls
+[0m[01;34mTask1[0m  [01;34mTask2[0m  [01;34mTask3[0m
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2[00m$ ca[Kd Y[KTask3
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ls
+[0m[01;31mRobertAroutiounianLab2Task3.zip[0m  [01;32msub[0m  sub.c  [01;34msub.dSYM[0m  typescript.txt
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc - [Kg sub. c -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub
+Segmentation fault (core dumped)
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./ sub [K[K[K[K[Ksub a b
+f i like apples
+
+
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub
+Segmentation fault (core dumped)
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub
+Segmentation fault (core dumped)
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g[K[K[K[K[K[K./sub a b[Kgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [6P./sub
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Before
+Segmentation fault (core dumped)
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./subgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [6P./sub
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Before
+Inside
+Segmentation fault (core dumped)
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./subgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [6P./sub
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Before
+After
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub -h
+Before
+Inside
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub -h[Kgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [3P./sub -h
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Before
+Inside
+-h
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub -hgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [3P./sub -h
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Before
+Inside
+-h
+Insdie if
+sub fromChar ToChar [-f inputFile] [-o outputFile]After
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub -hgcc -g sub.cc -o sub
+[01m[Ksub.c:[m[K In function â€˜[01m[Kmain[m[Kâ€™:
+[01m[Ksub.c:53:1:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+ }
+[01;32m[K ^[m[K
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [3P./sub -h
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+-h
+sub fromChar ToChar [-f inputFile] [-o outputFile]]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub -hgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [3P./sub -h
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+-h
+sub fromChar ToChar [-f inputFile] [-o outputFile]
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub -hgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [3P./sub -h
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+sub fromChar ToChar [-f inputFile] [-o outputFile]
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub -h[K[Ka b
+i like apples
+ap
+
+adlfkj
+asdfjflkjas
+d
+adkf
+akdjf
+aksjd
+fkja
+lsdkfj^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gdb[K[K[K./sub a b[1P-hgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gdb ./sub a  b
+Excess command line arguments ignored. (b)
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./sub...done.
+/home/robertubuntu/Documents/Comp362/Lab2/Task3/a: No such file or directory.
+(gdb) break 26
+Breakpoint 1 at 0x40079a: file sub.c, line 26.
+(gdb) run
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub 
+[Inferior 1 (process 6320) exited normally]
+(gdb) list
+7	#include <string.h>
+8	#define FROM_CHAR 1
+9	#define TO_CHAR 2
+10	
+11	int main(int argc, char *argv[])
+12	{
+13		int ctr;
+14		char fromChar;
+15		char toChar;
+16		FILE *inFile;
+(gdb) list
+17		FILE *outFile;
+18		// We will need feof, putc, getc
+19		// while(!foef(stdin)) { char c = getc(stdin); putc(c, stdout); }
+20		
+21		if (argc > 1) {
+22			if ((strcmp(argv[FROM_CHAR], "-h")) == 0) {
+23				printf("sub fromChar ToChar [-f inputFile] [-o outputFile]\n");
+24			}
+25			else {
+26				fromChar = argv[FROM_CHAR][0];
+(gdb) print ag[Krgv[FROM_CHAR]
+No symbol "argv" in current context.
+(gdb) print argv
+No symbol "argv" in current context.
+(gdb) run a b
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b
+
+Breakpoint 1, main (argc=3, argv=0x7fffffffde48) at sub.c:26
+26				fromChar = argv[FROM_CHAR][0];
+(gdb) print argv
+$1 = (char **) 0x7fffffffde48
+(gdb) print argv[FROM_CHAR]
+No symbol "FROM_CHAR" in current context.
+(gdb) step
+27				toChar = argv[TO_CHAR][0];
+(gdb) print argv[1]
+$2 = 0x7fffffffe20d "a"
+(gdb) print from [KChar
+$3 = 97 'a'
+(gdb) print toChar
+$4 = 64 '@'
+(gdb) step
+29				for (ctr = 2; ctr < argc; ctr += 1) {
+(gdb) print toChar
+$5 = 98 'b'
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 6329] will be killed.
+
+Quit anyway? (y or n) y
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ script type script.t[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kypesscript_GDB.txt [K[K[K[K[K[K[K[K[K[Kt.txt
+Script started, file is typescript.txt
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gdb ./sub a  b
+Excess command line arguments ignored. (b)
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./sub...done.
+/home/robertubuntu/Documents/Comp362/Lab2/Task3/a: No such file or directory.
+(gdb) run a [K[K[K[K[K[Kbreka [K[K[K[K[K[Klist
+7	#include <string.h>
+8	#define FROM_CHAR 1
+9	#define TO_CHAR 2
+10	
+11	int main(int argc, char *argv[])
+12	{
+13		int ctr;
+14		char fromChar;
+15		char toChar;
+16		FILE *inFile;
+(gdb) 
+17		FILE *outFile;
+18		// We will need feof, putc, getc
+19		// while(!foef(stdin)) { char c = getc(stdin); putc(c, stdout); }
+20		
+21		if (argc > 1) {
+22			if ((strcmp(argv[FROM_CHAR], "-h")) == 0) {
+23				printf("sub fromChar ToChar [-f inputFile] [-o outputFile]\n");
+24			}
+25			else {
+26				fromChar = argv[FROM_CHAR][0];
+(gdb) break 26
+Breakpoint 1 at 0x40079a: file sub.c, line 26.
+(gdb) run a b
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b
+
+Breakpoint 1, main (argc=3, argv=0x7fffffffde48) at sub.c:26
+26				fromChar = argv[FROM_CHAR][0];
+(gdb) step
+27				toChar = argv[TO_CHAR][0];
+(gdb) print fromChar
+$1 = 97 'a'
+(gdb) print toChar
+$2 = 64 '@'
+(gdb) step
+29				for (ctr = 2; ctr < argc; ctr += 1) {
+(gdb) print s[Ktoc[KChar
+$3 = 98 'b'
+(gdb) print atgc
+No symbol "atgc" in current context.
+(gdb) print argc
+$4 = 3
+(gdb) list
+24			}
+25			else {
+26				fromChar = argv[FROM_CHAR][0];
+27				toChar = argv[TO_CHAR][0];
+28	
+29				for (ctr = 3; ctr < argc; ctr += 1) {
+30					if (strcmp(argv[ctr], "-f") == 0) {
+31						inFile = freopen(argv[ctr + 1], "r", stdin);
+32					}
+33					else if (strcmp(argv[ctr], "-o") == 0) {
+(gdb) step
+30					if (strcmp(argv[ctr], "-f") == 0) {
+(gdb) step
+__strcmp_sse2_unaligned ()
+    at ../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S:24
+24	../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S: No such file or directory.
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 6352] will be killed.
+
+Quit anyway? (y or n) y
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gdb ./sub a  b[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgdb ./sub a  b[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[Kgccc[K -g sub. c -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b
+I like apples
+
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a a a  a
+
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a a a  a[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[2Pb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a a a a[K
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a a a  a[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.c -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a a a a[K
+^[[A
+^[[A^[[A^[[B^[[B
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gdb ./sub a  b
+Excess command line arguments ignored. (b)
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./sub...done.
+/home/robertubuntu/Documents/Comp362/Lab2/Task3/a: No such file or directory.
+(gdb) run a b
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b
+^C
+Program received signal SIGINT, Interrupt.
+__lll_lock_wait_private ()
+    at ../sysdeps/unix/sysv/linux/x86_64/lowlevellock.S:95
+95	../sysdeps/unix/sysv/linux/x86_64/lowlevellock.S: No such file or directory.
+(gdb) backtrace 
+#0  __lll_lock_wait_private ()
+    at ../sysdeps/unix/sysv/linux/x86_64/lowlevellock.S:95
+#1  0x00007ffff7a83948 in _IO_feof (fp=0x7fffffffe345) at feof.c:35
+#2  0x00000000004008ed in main (argc=3, argv=0x7fffffffde48) at sub.c:42
+(gdb) fram 8
+#0  0x0000000000000000 in ?? ()
+(gdb) frame 8
+#0  0x0000000000000000 in ?? ()
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 6442] will be killed.
+
+Quit anyway? (y or n) y
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gdb ./sub a  b[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a a
+[Ca[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.c -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ 1[Kgcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [Cdb ./sub a b[K
+Excess command line arguments ignored. (b)
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./sub...done.
+/home/robertubuntu/Documents/Comp362/Lab2/Task3/a: No such file or directory.
+(gdb) quit
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gdb ./sub a  b[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [Ccc -g sub.c -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [Cdb ./sub a b[K[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a a
+[Ca[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[Ka[K a
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a agdb ./sub a  b[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [Ccc -g sub.c -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [2P./sub a a
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+hi
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a agcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [2P./sub a a
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [2P./sub a a
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Before for
+After for
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a agcc -g sub.cc -o sub
+[01m[Ksub.c:[m[K In function â€˜[01m[Kmain[m[Kâ€™:
+[01m[Ksub.c:56:4:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function â€˜[01m[Kclose[m[Kâ€™ [-Wimplicit-function-declaration]
+    close(inFile);
+[01;32m[K    ^[m[K
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [2P./sub a a
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Before for
+After for
+Hi
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a agcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [2P./sub a a
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Before for
+After for
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a agcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [2P./sub a a
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[Ka a b  c
+Before for
+Inside for
+Inside for
+sub fromChar ToChar [-f inputFile] [-o outputFile]Inside for
+Inside for
+sub fromChar ToChar [-f inputFile] [-o outputFile]After for
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a a b  c[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.c -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a a b c[K[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.c -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a a b c[K
+Before for
+Inside for
+sub fromChar ToChar [-f inputFile] [-o outputFile]
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a a b  c[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.c -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a a b c[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kb
+i like apples
+i like apples
+a
+a
+b
+b
+i like bal pples
+i like bapples
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gdb ./sub [K
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./sub...done.
+(gdb) rub a[K[K[Kn a b
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b
+i like apples
+i like apples
+^C
+Program received signal SIGINT, Interrupt.
+0x00007ffff7b04680 in __read_nocancel ()
+    at ../sysdeps/unix/syscall-template.S:84
+84	../sysdeps/unix/syscall-template.S: No such file or directory.
+(gdb) break 47
+Breakpoint 1 at 0x7ffff7b042f0: file ../sysdeps/unix/syscall-template.S, line 47.
+(gdb) run a b
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b
+
+Breakpoint 1, access () at ../sysdeps/unix/syscall-template.S:84
+84	../sysdeps/unix/syscall-template.S: No such file or directory.
+(gdb) i like apples
+Undefined info command: "like apples".  Try "help info".
+(gdb) run a b
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b
+
+Breakpoint 1, access () at ../sysdeps/unix/syscall-template.S:84
+84	../sysdeps/unix/syscall-template.S: No such file or directory.
+(gdb) clear break
+Function "break" not defined.
+(gdb) blrea [K[K[K[K[K[Kclre[K[K[Kaer[K[K[Klear breakpoints
+Function "breakpoints" not defined.
+(gdb) clear breakpoint
+Function "breakpoint" not defined.
+(gdb) delete break
+Delete all breakpoints? (y or n) y
+(gdb) break 47
+Breakpoint 2 at 0x7ffff7df2150: /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/syscall-template.S:47. (5 locations)
+(gdb) delete break
+Delete all breakpoints? (y or n) y
+(gdb) break 54[K5
+Breakpoint 3 at 0x7ffff7df2150: /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/syscall-template.S:55. (5 locations)
+(gdb) run a b
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b
+
+Breakpoint 3, access () at ../sysdeps/unix/syscall-template.S:84
+84	../sysdeps/unix/syscall-template.S: No such file or directory.
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 6689] will be killed.
+
+Quit anyway? (y or n) y
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gdb ./sub./sub a bgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[2Pdb ./sub
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./sub a b
+i like apples
+i
+a
+i 
+a
+ l
+a
+li
+a
+ik
+a
+ke
+a
+e 
+a
+ a
+a
+ap
+a
+pp
+a
+pl
+a
+le
+a
+es
+a
+s
+
+a
+
+a
+a
+a
+a
+
+a
+
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a bgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [2P./sub a b
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+i like apples
+The current character is: i
+fromChar: a
+iThe current character is:  
+fromChar: a
+ The current character is: l
+fromChar: a
+lThe current character is: i
+fromChar: a
+iThe current character is: k
+fromChar: a
+kThe current character is: e
+fromChar: a
+eThe current character is:  
+fromChar: a
+ The current character is: a
+fromChar: a
+aThe current character is: p
+fromChar: a
+pThe current character is: p
+fromChar: a
+pThe current character is: l
+fromChar: a
+lThe current character is: e
+fromChar: a
+eThe current character is: s
+fromChar: a
+sThe current character is: 
+
+fromChar: a
+
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a bgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [2P./sub a b
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+i like apples
+i like Inside if
+apples
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a bgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [2P./sub a b
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+i like apples
+i like Inside if
+bpples
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a bgcc -g sub.cc -o sub
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [2P./sub a b
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+I like apples
+I like bpples
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a bgcc -g sub.cc -o sub[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [2P./sub a b
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C - f V[KinputFile.txt
+sub fromChar ToChar [-f inputFile] [-o outputFile]
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [K]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gdb ./sub
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./sub...done.
+(gdb) run a b -f inputFile.txt
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b -f inputFile.txt
+sub fromChar ToChar [-f inputFile] [-o outputFile]
+[Inferior 1 (process 6945) exited normally]
+(gdb) break 33
+Breakpoint 1 at 0x40081e: file sub.c, line 33.
+(gdb) run a b inputFile.txt
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b inputFile.txt
+
+Breakpoint 1, main (argc=4, argv=0x7fffffffde28) at sub.c:33
+33					if ((strcmp(argv[ctr], "-f")) == 0) {
+(gdb) print argv[str[K[K[Kctr]
+$1 = 0x7fffffffe203 "inputFile.txt"
+(gdb) print argv[3]
+$2 = 0x7fffffffe203 "inputFile.txt"
+(gdb) print argv[2]
+$3 = 0x7fffffffe201 "b"
+(gdb) rubn [K[Kn [K[K[Kn a b -f inputFile.txt
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b -f inputFile.txt
+
+Breakpoint 1, main (argc=5, argv=0x7fffffffde28) at sub.c:33
+33					if ((strcmp(argv[ctr], "-f")) == 0) {
+(gdb) print argv[ctr]
+$4 = 0x7fffffffe200 "-f"
+(gdb) print argv[ctr + 1]
+$5 = 0x7fffffffe203 "inputFile.txt"
+(gdb) step
+__strcmp_sse2_unaligned () at ../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S:24
+24	../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S: No such file or directory.
+(gdb) continue
+Continuing.
+
+Breakpoint 1, main (argc=5, argv=0x7fffffffde28) at sub.c:33
+33					if ((strcmp(argv[ctr], "-f")) == 0) {
+(gdb) continue
+Continuing.
+sub fromChar ToChar [-f inputFile] [-o outputFile]
+[Inferior 1 (process 6955) exited normally]
+(gdb) quit
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gdb ./sub./sub a b -f inputFFile.txt
+sub fromChar ToChar [-f inputFile] [-o outputFile]
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [9Pgdb ./sub
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./sub a b -f inputFFile.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g sub.c -o subb
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.c -o subb[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFile.txt
+Inside if
+inside else
+sub fromChar ToChar [-f inputFile] [-o outputFile]
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.c -o sub[K
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ gcc -g sub.c -o subb[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFile.txt
+The complbint flies over the scbndbl.
+The bffected orbitbl lends the pencil.
+The continentbl cblculbtor surfbces b musicbl.
+A detector pipelines b ritubl below the worn joy.
+A cold gossips benebth the crbzy bliss.
+
+ÿ]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt -o outputFile.txt
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt -o outputFile.txt[C[C[C[C[C[C[C[C[K
+The complbint flies over the scbndbl.
+The bffected orbitbl lends the pencil.
+The continentbl cblculbtor surfbces b musicbl.
+A detector pipelines b ritubl below the worn joy.
+A cold gossips benebth the crbzy bliss.
+ÿ]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CinputFi[1Ple.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[C[C[C[CoinputFile.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C inputFile.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[CnputF[1Pile.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[CputFi[1Ple.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[CoputFile.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[CuputFile.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CtputFile.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+sub fromChar ToChar [-f inputFile] [-o outputFile]
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -fo outpuutFile.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./sub a b -o outpu fFil.txt
+I like apples more than Bob like crazy cash cabs.
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -o outpuffFil.txt
+I like apples.
+Bobo  likes crazy cash cabs.
+This should work, pleas  e lordy.
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sb[Kub a b
+I like apples.
+I like bpples.
+Bob likes crazy cash cabs.
+Bob likes crbzy cbsh cbbs.
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./a b [K[K[K[Ksub a b -f input Fule.[K[K[K[Kil.[Ke.tct[K[Kxt
+The complbint flies over the scbndbl.
+The bffected orbitbl lends the pencil.
+The continentbl cblculbtor surfbces b musicbl.
+A detector pipelines b ritubl below the worn joy.
+A cold gossips benebth the crbzy bliss.
+ÿ]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt -o outputFil.e[K[Ke.txt
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt -o outputFile.txt
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt -o outputFile.txt
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt -o outputFile.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+I like bpples.
+Bob likes the show crbzh cbsh cbb.
+The quick brown fox jumped over the lbzy dog.ÿ]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt
+I like bpples.
+Bob likes the show crbzh cbsh cbb.
+The quick brown fox jumped over the lbzy dog.
+/0
+ÿ]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt
+I like bpples.
+Bob likes the show crbzh cbsh cbb.
+The quick brown fox jumped over the lbzy dog.
+\0
+ÿ]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt
+I like bpples.
+Bob likes the show crbzh cbsh cbb.
+The quick brown fox jumped over the lbzy dog.
+
+ÿ]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt -o outputFile.txt
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt -o outputFile.txt[C[C[C[C[C[C[C[C[K -o outputFile.txt[C[C[C[C[C[C[C[C[K[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -o outpu rfile[K[K[K[KFil.txt
+I like apples.
+Bob likes crazy cash cabs.
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -o outpurrFil.txt[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K
+I like apples
+I like bpples
+Bob likes crazy cash casb  vs  bs
+Bob likes crbzy cbsh cbbs
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -o outpurrFil.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[C[C[Cf inputFile.txt -o outputFile.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+I like bpples.
+Bob likes the show crbzh cbsh cbb.
+The quick brown fox jumped over the lbzy dog.
+
+ÿ]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ ./sub a b -f inputFFile.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -o outpurrFil.txt[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ [C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cb -o outp utFil.txt
+I like p apples
+^C
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ exit
+exit
+Script done, file is typescript.txt
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ cat typescript.txt  | perl -pe 's/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' | col -b > typescript-processed.tx t
+col: Invalid or incomplete multibyte or wide character
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ cat typescript.txt  | perl -pe 's/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' | col -b > typescript-processed.tx t
+col: Invalid or incomplete multibyte or wide character
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab2/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab2/Task3[00m$ exit
+exit
+
+Script done on Mon 06 Feb 2017 01:48:44 PM PST

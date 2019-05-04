@@ -1,0 +1,83 @@
+Script started on Tue 31 Jan 2017 02:21:34 PM PST
+cistudent@NetworkingLab:~/Documents/Comp362/Lab2/Task2$ ulimit -c unlimited
+cistudent@NetworkingLab:~/Documents/Comp362/Lab2/Task2$ gcc -g crash.c -o crash
+cistudent@NetworkingLab:~/Documents/Comp362/Lab2/Task2$ ./crash
+What's your first name?
+Segmentation fault (core dumped)
+cistudent@NetworkingLab:~/Documents/Comp362/Lab2/Task2$ gdb crash
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from crash...done.
+(gdb) list
+3	#include <string.h>
+4
+5	typedef struct name
+6	{
+7	    char *first, *last;
+8	} NAME;
+9
+10	typedef NAME	    *NAME_PTR;
+11
+12	void get_name(NAME_PTR);
+(gdb)
+13
+14	int main(void)
+15	{
+16	    NAME_PTR me;
+17	    get_name(me);
+18	    printf("Hello %s %s!\n", me->first, me->last);
+19	}
+20
+21	void get_name(NAME_PTR ptr)
+22	{
+(gdb)
+23	    printf("What's your first name?\n");
+24	    scanf("%s", ptr->first);
+25	    printf("What's your last name?\n");
+26	    scanf("%s", ptr->last);
+27	}
+(gdb)
+Line number 28 out of range; crash.c has 27 lines.
+(gdb) break 15
+Breakpoint 1 at 0x4005de: file crash.c, line 15.
+(gdb) run test1.txt
+Starting program: /home/cistudent/Documents/Comp362/Lab2/Task2/crash test1.txt
+
+Breakpoint 1, main () at crash.c:17
+17	    get_name(me);
+(gdb) delete breakk
+Delete all breakpoints? (y or n) y
+(gdb) run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /home/cistudent/Documents/Comp362/Lab2/Task2/crash test1.txt
+What's your first name?
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000000000040062c in get_name (ptr=0x0) at crash.c:24
+24	    scanf("%s", ptr->first);
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 2959] will be killed.
+
+Quit anyway? (y or n) y
+cistudent@NetworkingLab:~/Documents/Comp362/Lab2/Task2$ ulimit -c =\
+> ^C
+cistudent@NetworkingLab:~/Documents/Comp362/Lab2/Task2$ ulimit -c 0
+cistudent@NetworkingLab:~/Documents/Comp362/Lab2/Task2$ exit
+exit
+
+Script done on Tue 31 Jan 2017 02:31:51 PM PST

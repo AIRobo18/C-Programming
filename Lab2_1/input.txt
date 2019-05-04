@@ -1,0 +1,9 @@
+8
+Wood 1.00
+Stone 2.50
+Plastic 5.00
+Glass 10.00
+Iron 25.00
+Steel 50.00
+Gold 100.00
+Diamond 130.00

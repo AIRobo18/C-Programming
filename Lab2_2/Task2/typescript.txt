@@ -1,0 +1,22 @@
+Script started on Mon Feb  6 10:44:53 2017
+[?1034hbash-3.2$ ulimit -c unlimited
+bash-3.2$ gcc - g[K[Kg crash.c [K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ..
+bash-3.2$ ls
+Task1	Task2	Task3
+bash-3.2$ cd Task2[K3
+bash-3.2$ ls
+RobertAroutiounianLab2Task3.zip	sub.c
+sub				typescript.txt
+bash-3.2$ gcc -[K[K[K[K[Kcd ..
+bash-3.2$ cd Task2
+bash-3.2$ ulimit -c 0
+bash-3.2$ cd ..
+bash-3.2$ cd Task3
+bash-3.2$ unlimit -c unlimited
+bash: unlimit: command not found
+bash-3.2$ ulimit -c unlimited
+bash: ulimit: core file size: cannot modify limit: Operation not permitted
+bash-3.2$ exit
+exit
+
+Script done on Mon Feb  6 10:46:40 2017

@@ -1,0 +1,205 @@
+SIE-1119-03:lab4 robert.aroutiounian3$ gcc `xml2-config --cflags --libs` -o l4t1 l4t1.c
+SIE-1119-03:lab4 robert.aroutiounian3$ ./l4t1 catalog.xml
+Runnig for: catalog.xml
+CI SCHEDULE
+
+ FALL  2016 
+
+ COMP  Programming Languages  232 		 UNIT WEIGHT:  3 
+	 Andrzej Bieszczad 		 M 2:00pm - 3:50pm, W 3:00pm - 5:50pm 
+ COMP  Computer Organization and Architecture  262 		 UNIT WEIGHT:  3 
+	 Leo Benegas 		 T 4:00pm - 5:50pm, Th 3:00pm - 5:50pm 
+ COMP  Data Structures And Programming Design  151 		 UNIT WEIGHT:  4 
+	 Anna Bieszczad 		 MW 12:00pm - 1:50pm 
+ COMP  Computer Architecture and Assembly Language  162 		 UNIT WEIGHT:  3 
+	 Peter Smith 		 W 12:00pm - 1:50pm, F 10:00am - 12:50pm 
+ COMP  Object-Oriented Programming  150 		 UNIT WEIGHT:  4 
+	 Anna Bieszczad 		 TTh 12:00 - 1:50pm 
+ MATH  Calculus I  150 		 UNIT WEIGHT:  4 
+	 Robert Ream 		 MW 8:00am - 9:50am 
+ MATH  Calculus II  151 		 UNIT WEIGHT:  3 
+	 Selenne Bañuelos 		 TTh 10:00am - 11:50am 
+ MATH  Calculus III  250 		 UNIT WEIGHT:  3 
+	 Cindy Wyels 		 TTh 9:00am - 10:15am 
+ MATH  Logic and Mathematical Reasoning  230 		 UNIT WEIGHT:  3 
+	 Dennis Slivinski 		 TTh 1:30pm - 2:45pm 
+ MATH  Linear Algebra  240 		 UNIT WEIGHT:  3 
+	 Selenne Bañuelos 		 TTh 1:30pm - 2:45pm 
+ BIOL  Life in the Universe  110 		 UNIT WEIGHT:  3 
+	 Clinton Harper 		 TTh 3:00pm - 4:15pm 
+ BIOL  Cell and Molecular Biology  201 		 UNIT WEIGHT:  4 
+	 Jessica Dalton 		 TTh 12:00pm - 2:50pm 
+ BIOL  Neurobiology and Cognitive Sci  212 		 UNIT WEIGHT:  3 
+	 Charles Sackerson 		 MW 3:00pm- 4:15pm 
+ BIOL  Sex, Germs and Diseases  213 		 UNIT WEIGHT:  3 
+	 Patricia Tavormina 		 W 12:00pm - 2:50pm 
+ BIOL  Microbiology  301 		 UNIT WEIGHT:  4 
+	 Erich Fleming 		 T 9:00am - 11:50am 
+
+ SPRING  2016 
+
+ COMP  Programming Languages  232 		 UNIT WEIGHT:  3 
+	 Andrzej Bieszczad 		 T 6:00 PM - 7:50 PM, Th 6:00 PM - 8:50 PM
+ COMP  Computer Organization and Architecture  262 		 UNIT WEIGHT:  3 
+	 Leo Benegas 		 M 10:00am - 11:50am, W 9:00am - 11:50am 
+ COMP  Data Structures And Programming Design  151 		 UNIT WEIGHT:  4 
+	 Anna Bieszczad 		 T 12:00pm - 2:50pm, Th 12:00pm - 2:50pm 
+ COMP  Computer Architecture and Assembly Language  162 		 UNIT WEIGHT:  3 
+	 Peter Smith 		 WW 9:00am - 9:50pm, F 9:00am - 11:50am 
+ COMP  Object-Oriented Programming  150 		 UNIT WEIGHT:  4 
+	 Anna Bieszczad 		 T 12:00 - 2:50pm, Th 9:00am - 11:50am 
+ MATH  Calculus I  150 		 UNIT WEIGHT:  4 
+	 Robert Ream 		 MW 10:00am -11:50am 
+ MATH  Calculus II  151 		 UNIT WEIGHT:  3 
+	 Selenne Bañuelos 		 TTh 8:00am - 9:50am 
+ MATH  Calculus III  250 		 UNIT WEIGHT:  3 
+	 Cindy Wyels 		 TTh 9:00am - 10:15am 
+ MATH  Logic and Mathematical Reasoning  230 		 UNIT WEIGHT:  3 
+	 Dennis Slivinski 		 M 9:00am - 11:50am 
+ MATH  Linear Algebra  240 		 UNIT WEIGHT:  3 
+	 Selenne Bañuelos 		 TTh 10:30am - 11:45am 
+ BIOL  Life in the Universe  110 		 UNIT WEIGHT:  3 
+	 Clinton Harper 		 TTh 3:00pm - 4:15pm 
+ BIOL  Cell and Molecular Biology  201 		 UNIT WEIGHT:  4 
+	 Jessica Dalton 		 TTh 4:30pm - 5:45pm 
+ BIOL  Neurobiology and Cognitive Sci  212 		 UNIT WEIGHT:  3 
+	 Charles Sackerson 		 MW 3:00pm- 4:15pm 
+ BIOL  Sex, Germs and Diseases  213 		 UNIT WEIGHT:  3 
+	 Zin Htway 		 T 6:00pm - 8:50pm 
+ BIOL  Microbiology  301 		 UNIT WEIGHT:  4 
+	 Erich Fleming 		 Th 9:00am - 11:50am 
+
+Done with: catalog.xml
+SIE-1119-03:lab4 robert.aroutiounian3$ gcc `xml2-config --cflags --libs` -o l4t1 l4t1.c
+SIE-1119-03:lab4 robert.aroutiounian3$ ./l4t1 catalog.xml -d
+Runnig for: catalog.xml
+CI SCHEDULE
+
+ FALL  2016 
+
+ COMP  Programming Languages  232 		 UNIT WEIGHT:  3 
+ Discussion of issues in the design, implementation, and use of high-level programming languages. Topics include: historical background; how languages reflect different design philosophies and user requirements; technical issues in the design of major imperative (procedural) programming languages; other approaches to programming: functional programming, logic programming, and object-oriented programming. 
+	 Andrzej Bieszczad 		 M 2:00pm - 3:50pm, W 3:00pm - 5:50pm 
+
+ COMP  Computer Organization and Architecture  262 		 UNIT WEIGHT:  3 
+ Extension of basic addressing concepts to more advanced addressability such as base register and self relative addressing. Topics include: comparative computer architecture focusing on such organizations as multiple register processors and stack machines; basics of virtual memory, input/output; introduction to the concept of  microprogrammable systems; low-level language translation process associated with assemblers; system functions such as relocatable loading and memory management; application of data structure and hashing techniques to the above. 
+	 Leo Benegas 		 T 4:00pm - 5:50pm, Th 3:00pm - 5:50pm 
+
+ COMP  Data Structures And Programming Design  151 		 UNIT WEIGHT:  4 
+ Introduction to data structures and the algorithms that use them. Review of composite data types such as arrays, records, strings, and sets. Topics include: the role of the abstract data type in program design, definition, implementation and application of data structures such as stacks, queues, linked lists, trees and graphs recursion use of time-complexity expressions in evaluating algorithms. comparative study of sorting and searching algorithms. 
+	 Anna Bieszczad 		 MW 12:00pm - 1:50pm 
+
+ COMP  Computer Architecture and Assembly Language  162 		 UNIT WEIGHT:  3 
+ An introduction to computer architecture, assembly language programming, system software and computer applications. Topics include: number systems and data representation internal organization of a computer primitive instructions and operations Assembly language language translation principles overview of operating systems. 
+	 Peter Smith 		 W 12:00pm - 1:50pm, F 10:00am - 12:50pm 
+
+ COMP  Object-Oriented Programming  150 		 UNIT WEIGHT:  4 
+ Course taught in a lab. Introduction to algorithms, their representation, design, structuring, analysis and optimization. The course introduces the concept of object paradigm, design and implementation of algorithms as structured programs in a high level language. 
+	 Anna Bieszczad 		 TTh 12:00 - 1:50pm 
+
+ MATH  Calculus I  150 		 UNIT WEIGHT:  4 
+ A course in analytic geometry and calculus. Topics include: elementary and transcendental functions, their properties, limits, derivatives, integrals and mathematical modeling. 
+	 Robert Ream 		 MW 8:00am - 9:50am 
+
+ MATH  Calculus II  151 		 UNIT WEIGHT:  3 
+ Topics include: differentiation, integration, sequences, infinite series, and power series. 
+	 Selenne Bañuelos 		 TTh 10:00am - 11:50am 
+
+ MATH  Calculus III  250 		 UNIT WEIGHT:  3 
+ Topics include: functions of several variables, solid analytic geometry, partial differentiation, multiple integrals with applications; vector analysis, and line and surface integrals. 
+	 Cindy Wyels 		 TTh 9:00am - 10:15am 
+
+ MATH  Logic and Mathematical Reasoning  230 		 UNIT WEIGHT:  3 
+ Introduction to deductive logic, logical and critical thinking, and symbolic approaches to common language. Includes abstract sets and number sets, relations, propositional logic, and the theory of quantification. 
+	 Dennis Slivinski 		 TTh 1:30pm - 2:45pm 
+
+ MATH  Linear Algebra  240 		 UNIT WEIGHT:  3 
+ Topics include: matrices, linear systems of equations, determinants, vectors in 2 and 3 dimensions, eigenvalues, the vector space Rn , linear transformations, introduction to general vector spaces and applications. 
+	 Selenne Bañuelos 		 TTh 1:30pm - 2:45pm 
+
+ BIOL  Life in the Universe  110 		 UNIT WEIGHT:  3 
+ Explains the origins of life on Earth and the conditions for life to be discovered on other worlds. Current and potential means of exploring space will be discussed such as: Mars rovers, radio telescopes and the promise and limitations of interstellar travel. 
+	 Clinton Harper 		 TTh 3:00pm - 4:15pm 
+
+ BIOL  Cell and Molecular Biology  201 		 UNIT WEIGHT:  4 
+ This course will cover principles of basic chemistry, biological macromolecules, prokaryotic and eukaryotic cell structure and function, homeostasis, metabolism including both respiration and photosynthesis, cell division, signal transduction, Mendelian genetics, molecular genetics including transcription and translation, and a brief introduction to virology and immunology. The philosophy of science, scientific method and experimental design are foundational to the course. 
+	 Jessica Dalton 		 TTh 12:00pm - 2:50pm 
+
+ BIOL  Neurobiology and Cognitive Sci  212 		 UNIT WEIGHT:  3 
+ Principles of brain organization and function underlying behavior. Topics include neuroanatomy and physiology of language, vision, sexual behavior, memory and abnormal behavior. 
+	 Charles Sackerson 		 MW 3:00pm- 4:15pm 
+
+ BIOL  Sex, Germs and Diseases  213 		 UNIT WEIGHT:  3 
+ This is a course to introduce biology of sexually transmitted diseases and their impact on society. It covers reproductive system, factors in the spread of diseases, biology and pathogenesis of infectious agents and sexually transmitted diseases caused by bacteria, viruses, fungi and protozoa. Topics also include impact of current biotechnology in relation to vaccine development, treatment and improved diagnostics of these diseases as well as challenges of these diseases to economy, public health system, individuals, and society at large. 
+	 Patricia Tavormina 		 W 12:00pm - 2:50pm 
+
+ BIOL  Microbiology  301 		 UNIT WEIGHT:  4 
+ An introduction to the structure, function and diversity of microorganisms. Explores topics including microbial identification, diversity, metabolism, pathology, microbial ecology, and the role of microbes in human society. 
+	 Erich Fleming 		 T 9:00am - 11:50am 
+
+
+ SPRING  2016 
+
+ COMP  Programming Languages  232 		 UNIT WEIGHT:  3 
+ Discussion of issues in the design, implementation, and use of high-level programming languages. Topics include: historical background; how languages reflect different design philosophies and user requirements; technical issues in the design of major imperative (procedural) programming languages; other approaches to programming: functional programming, logic programming, and object-oriented programming. 
+	 Andrzej Bieszczad 		 T 6:00 PM - 7:50 PM, Th 6:00 PM - 8:50 PM
+
+ COMP  Computer Organization and Architecture  262 		 UNIT WEIGHT:  3 
+ Extension of basic addressing concepts to more advanced addressability such as base register and self relative addressing. Topics include: comparative computer architecture focusing on such organizations as multiple register processors and stack machines; basics of virtual memory, input/output; introduction to the concept of microprogrammable systems; low-level language translation process associated with assemblers; system functions such as relocatable loading and memory management; application of data structure and hashing techniques to the above. 
+	 Leo Benegas 		 M 10:00am - 11:50am, W 9:00am - 11:50am 
+
+ COMP  Data Structures And Programming Design  151 		 UNIT WEIGHT:  4 
+ Introduction to data structures and the algorithms that use them. Review of composite data types such as arrays, records, strings, and sets. Topics include: the role of the abstract data type in program design, definition, implementation and application of data structures such as stacks, queues, linked lists, trees and graphs recursion use of time-complexity expressions in evaluating algorithms. comparative study of sorting and searching algorithms. 
+	 Anna Bieszczad 		 T 12:00pm - 2:50pm, Th 12:00pm - 2:50pm 
+
+ COMP  Computer Architecture and Assembly Language  162 		 UNIT WEIGHT:  3 
+ An introduction to computer architecture, assembly language programming, system software and computer applications. Topics include: number systems and data representation internal organization of a computer primitive instructions and operations Assembly language language translation principles overview of operating systems. 
+	 Peter Smith 		 WW 9:00am - 9:50pm, F 9:00am - 11:50am 
+
+ COMP  Object-Oriented Programming  150 		 UNIT WEIGHT:  4 
+ Course taught in a lab. Introduction to algorithms, their representation, design, structuring, analysis and optimization. The course introduces the concept of object paradigm, design and implementation of algorithms as structured programs in a high level language. 
+	 Anna Bieszczad 		 T 12:00 - 2:50pm, Th 9:00am - 11:50am 
+
+ MATH  Calculus I  150 		 UNIT WEIGHT:  4 
+ A course in analytic geometry and calculus. Topics include: elementary and transcendental functions, their properties, limits, derivatives, integrals and mathematical modeling. 
+	 Robert Ream 		 MW 10:00am -11:50am 
+
+ MATH  Calculus II  151 		 UNIT WEIGHT:  3 
+ Topics include: differentiation, integration, sequences, infinite series, and power series. 
+	 Selenne Bañuelos 		 TTh 8:00am - 9:50am 
+
+ MATH  Calculus III  250 		 UNIT WEIGHT:  3 
+ Topics include: functions of several variables, solid analytic geometry, partial differentiation, multiple integrals with applications; vector analysis, and line and surface integrals. 
+	 Cindy Wyels 		 TTh 9:00am - 10:15am 
+
+ MATH  Logic and Mathematical Reasoning  230 		 UNIT WEIGHT:  3 
+ Introduction to deductive logic, logical and critical thinking, and symbolic approaches to common language. Includes abstract sets and number sets, relations, propositional logic, and the theory of quantification. 
+	 Dennis Slivinski 		 M 9:00am - 11:50am 
+
+ MATH  Linear Algebra  240 		 UNIT WEIGHT:  3 
+ Topics include: matrices, linear systems of equations, determinants, vectors in 2 and 3 dimensions, eigenvalues, the vector space Rn , linear transformations, introduction to general vector spaces and applications. 
+	 Selenne Bañuelos 		 TTh 10:30am - 11:45am 
+
+ BIOL  Life in the Universe  110 		 UNIT WEIGHT:  3 
+ Explains the origins of life on Earth and the conditions for life to be discovered on other worlds. Current and potential means of exploring space will be discussed such as: Mars rovers, radio telescopes and the promise and limitations of interstellar travel. 
+	 Clinton Harper 		 TTh 3:00pm - 4:15pm 
+
+ BIOL  Cell and Molecular Biology  201 		 UNIT WEIGHT:  4 
+ This course will cover principles of basic chemistry, biological macromolecules, prokaryotic and eukaryotic cell structure and function, homeostasis, metabolism including both respiration and photosynthesis, cell division, signal transduction, Mendelian genetics, molecular genetics including transcription and translation, and a brief introduction to virology and immunology. The philosophy of science, scientific method and experimental design are foundational to the course. 
+	 Jessica Dalton 		 TTh 4:30pm - 5:45pm 
+
+ BIOL  Neurobiology and Cognitive Sci  212 		 UNIT WEIGHT:  3 
+ Principles of brain organization and function underlying behavior. Topics include neuroanatomy and physiology of language, vision, sexual behavior, memory and abnormal behavior. 
+	 Charles Sackerson 		 MW 3:00pm- 4:15pm 
+
+ BIOL  Sex, Germs and Diseases  213 		 UNIT WEIGHT:  3 
+ This is a course to introduce biology of sexually transmitted diseases and their impact on society. It covers reproductive system, factors in the spread of diseases, biology and pathogenesis of infectious agents and sexually transmitted diseases caused by bacteria, viruses, fungi and protozoa. Topics also include impact of current biotechnologyin relation to vaccine development, treatment and improved diagnosticsof these diseases as well as challenges of these diseases to economy, public health system, individuals, and society at large. 
+	 Zin Htway 		 T 6:00pm - 8:50pm 
+
+ BIOL  Microbiology  301 		 UNIT WEIGHT:  4 
+ An introduction to the structure, function and diversity of microorganisms. Explores topics including microbial identification, diversity, metabolism, pathology, microbial ecology, and the role of microbes in human society. 
+	 Erich Fleming 		 Th 9:00am - 11:50am 
+
+
+Done with: catalog.xml
+SIE-1119-03:lab4 robert.aroutiounian3$ 

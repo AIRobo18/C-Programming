@@ -1,0 +1,337 @@
+Script started on Mon 06 Feb 2017 12:11:47 PM PST
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+rbbertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ gdb ./sub a
+Excess command line arguments ignored. (b)
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./sub...done.
+/home/robertubuntu/Documents/Comp362/Lab2/Task3/a: No such file or directory.
+(gdb) lista
+7	#include <string.h>
+8	#define FROM_CHAR 1
+9	#define TO_CHAR 2
+10
+11	int main(int argc, char *argv[])
+12	{
+13		int ctr;
+14		char fromChar;
+15		char toChar;
+16		FILE *inFile;
+(gdb)
+17		FILE *outFile;
+18		// We will need feof, putc, getc
+19		// while(!foef(stdin)) { char c = getc(stdin); putc(c, stdout); }
+20
+21		if (argc > 1) {
+22			if ((strcmp(argv[FROM_CHAR], "-h")) == 0) {
+23				printf("sub fromChar ToChar [-f inputFile] [-o outputFile]\n");
+24			}
+25			else {
+26				fromChar = argv[FROM_CHAR][0];
+(gdb) break 26
+Breakpoint 1 at 0x40079a: file sub.c, line 26.
+(gdb) run a b
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b
+
+Breakpoint 1, main (argc=3, argv=0x7fffffffde48) at sub.c:26
+26				fromChar = argv[FROM_CHAR][0];
+(gdb) step
+27				toChar = argv[TO_CHAR][0];
+(gdb) print fromChar
+$1 = 97 'a'
+(gdb) print toChar
+$2 = 64 '@'
+(gdb) step
+29				for (ctr = 2; ctr < argc; ctr += 1) {
+(gdb) print toChar
+$3 = 98 'b'
+(gdb) print atgc
+No symbol "atgc" in current context.
+(gdb) print argc
+$4 = 3
+(gdb) list
+24			}
+25			else {
+26				fromChar = argv[FROM_CHAR][0];
+27				toChar = argv[TO_CHAR][0];
+28
+29				for (ctr = 3; ctr < argc; ctr += 1) {
+30					if (strcmp(argv[ctr], "-f") == 0) {
+31						inFile = freopen(argv[ctr + 1], "r", stdin);
+32					}
+33					else if (strcmp(argv[ctr], "-o") == 0) {
+(gdb) step
+30					if (strcmp(argv[ctr], "-f") == 0) {
+(gdb) step
+__strcmp_sse2_unaligned ()
+    at ../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S:24
+24	../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S: No such file or directory.
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 6352] will be killed.
+
+Quit anyway? (y or n) y
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ gdb ./sub a
+gbb ./sub a
+cc-o-subub.
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./sub a b
+I like apples
+
+^C
+rabertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./sub a a a
+
+^C
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ b/sub a a a
+cc-o-subub.c
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./subgasabaca
+^C
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ gccu-gasub.c -o sub
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./subgasabaca
+^[[A
+^[[A^[[A^[[B^[[B
+^C
+rbbertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ gdb ./sub a
+Excess command line arguments ignored. (b)
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./sub...done.
+/home/robertubuntu/Documents/Comp362/Lab2/Task3/a: No such file or directory.
+(gdb) run a b
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b
+^C
+Program received signal SIGINT, Interrupt.
+__lll_lock_wait_private ()
+    at ../sysdeps/unix/sysv/linux/x86_64/lowlevellock.S:95
+95	../sysdeps/unix/sysv/linux/x86_64/lowlevellock.S: No such file or directory.
+(gdb) backtrace
+#0  __lll_lock_wait_private ()
+    at ../sysdeps/unix/sysv/linux/x86_64/lowlevellock.S:95
+#1  0x00007ffff7a83948 in _IO_feof (fp=0x7fffffffe345) at feof.c:35
+#2  0x00000000004008ed in main (argc=3, argv=0x7fffffffde48) at sub.c:42
+(gdb) fram 8
+#0  0x0000000000000000 in ?? ()
+(gdb) frame 8
+#0  0x0000000000000000 in ?? ()
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 6442] will be killed.
+
+Quit anyway? (y or n) y
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./sub/aua a
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ gcc -g sub.c -o sub
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ dbc./subua.b
+Excess command line arguments ignored. (b)
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./sub...done.
+/home/robertubuntu/Documents/Comp362/Lab2/Task3/a: No such file or directory.
+(gdb) quit
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./subsabaacb-o sub
+a
+aa
+^C
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ccb-g/sub.c -o sub
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./subgasab.c
+
+hi
+^C
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./subgasab.c
+cc-o-subub.c
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./subgasab.c
+
+Before for
+After for
+^C
+co-orsubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ gccu-gasub.c
+sub.c: In function ‘main’:
+sub.c:56:4: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+    close(inFile);
+    ^
+co-orsubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ gcc -g sub.c
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./subgasab.c
+
+Before for
+After for
+Hi
+^C
+co-orsubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ gccu-gasub.c
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./subgasab.c
+
+Before for
+After for
+^C
+co-orsubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ gccu-gasub.c
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./subgasab.c
+aca b
+Before for
+Inside for
+Inside for
+sub fromChar ToChar [-f inputFile] [-o outputFile]Inside for
+Inside for
+sub fromChar ToChar [-f inputFile] [-o outputFile]After for
+^C
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ gccu-gasub.cc-o sub
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./subgasabbcc
+Before for
+Inside for
+sub fromChar ToChar [-f inputFile] [-o outputFile]
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ gccu-gasub.c -o sub
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ ./subgasabbcc
+b
+i like apples
+i like apples
+a
+a
+b
+b
+i like bapples
+i like bapples
+^C
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ gdb ./sub
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./sub...done.
+(gdb) run a b
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b
+i like apples
+i like apples
+^C
+Program received signal SIGINT, Interrupt.
+0x00007ffff7b04680 in __read_nocancel ()
+    at ../sysdeps/unix/syscall-template.S:84
+84	../sysdeps/unix/syscall-template.S: No such file or directory.
+(gdb) break 47
+Breakpoint 1 at 0x7ffff7b042f0: file ../sysdeps/unix/syscall-template.S, line 47.
+(gdb) run a b
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b
+
+Breakpoint 1, access () at ../sysdeps/unix/syscall-template.S:84
+84	../sysdeps/unix/syscall-template.S: No such file or directory.
+(gdb) i like apples
+Undefined info command: "like apples".	Try "help info".
+(gdb) run a b
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b
+
+Breakpoint 1, access () at ../sysdeps/unix/syscall-template.S:84
+84	../sysdeps/unix/syscall-template.S: No such file or directory.
+(gdb) clear break
+Function "break" not defined.
+(gdb) clear breakpoints
+Function "breakpoints" not defined.
+(gdb) clear breakpoint
+Function "breakpoint" not defined.
+(gdb) delete break
+Delete all breakpoints? (y or n) y
+(gdb) break 47
+Breakpoint 2 at 0x7ffff7df2150: /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/syscall-template.S:47. (5 locations)
+(gdb) delete break
+Delete all breakpoints? (y or n) y
+(gdb) break 55
+Breakpoint 3 at 0x7ffff7df2150: /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/syscall-template.S:55. (5 locations)
+(gdb) run a b
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /home/robertubuntu/Documents/Comp362/Lab2/Task3/sub a b
+
+Breakpoint 3, access () at ../sysdeps/unix/syscall-template.S:84
+84	../sysdeps/unix/syscall-template.S: No such file or directory.
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 6689] will be killed.
+
+Quit anyway? (y or n) y
+co-orsubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ gccu-gasub.c
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab2/Task3$ dbc./subub.c
+./sub a b
+i like apples
+i
+a
+i
+a
+ l
+a
+li
+a
+ik
+a
+ke
+a
+e
+a
+ a
+a
+ap
+a
+pp
+a
+pl
+a
+le
+a
+es
+a
+s
+
+a
+
+a
+a
+a
+a

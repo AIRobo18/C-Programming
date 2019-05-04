@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="catalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="semester" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="season" type="xs:string"/>
+              <xs:element name="year" type="xs:float"/>
+              <xs:element name="major" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="course" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="programName" type="xs:string"/>
+                          <xs:element name="courseName" type="xs:string"/>
+                          <xs:element name="courseNumber" type="xs:string"/>
+                          <xs:element name="unitWeight" type="xs:string"/>
+                          <xs:element name="description" type="xs:string"/>
+                          <xs:element name="instructor" type="xs:string"/>
+                          <xs:element name="time" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
