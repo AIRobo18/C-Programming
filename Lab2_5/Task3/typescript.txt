@@ -1,0 +1,109 @@
+Script started on Tue Feb 28 11:49:34 2017
+[?1034hbash-3.2$ exitgcc schedule_sim.c -o schedule_sim
+bash-3.2$ gcc schedule_sim.c -o schedule_sim[C[C[C[C[C[C[C[C[C[Cexit[K./schedule_sim
+T0:
+CPU: P1(15)
+QUEUE:
+T2:
+CPU: P1(13)
+QUEUE: P2(6)
+T5:
+CPU: P1(10)
+QUEUE: P2(6) P3(2)
+T10:
+CPU: P1(5)
+QUEUE: P2(6) P3(2) P4(9)
+T14:
+CPU: P1(0)
+QUEUE: P2(6) P3(2) P4(9)
+T20:
+CPU: P2(0)
+QUEUE: P3(2) P4(9)
+T22:
+CPU: P3(0)
+QUEUE: P4(9)
+T31:
+CPU: P4(0)
+QUEUE:
+bash-3.2$ ./schedule_sim[C[C[C[C[C[C[C[C[C[Cgcc schedule_sim.c -o schedule_sim
+bash-3.2$ gcc schedule_sim.c -o schedule_sim[C[C[C[C[C[C[C[C[C[C[20P./schedule_sim
+T0:
+CPU: P1(15)
+QUEUE:
+T2:
+CPU: P1(13)
+QUEUE: P2(6)
+T5:
+CPU: P1(10)
+QUEUE: P2(6) P3(2)
+T10:
+CPU: P1(5)
+QUEUE: P2(6) P3(2) P4(9)
+T14:
+CPU: P1(0)
+QUEUE: P2(6) P3(2) P4(9)
+T16:
+CPU: P3(0)
+QUEUE: P2(2) P4(9)
+T18:
+CPU: P2(0)
+QUEUE: P4(9)
+T27:
+CPU: P4(0)
+QUEUE:
+bash-3.2$ ./schedule_sim[C[C[C[C[C[C[C[C[C[Cgcc schedule_sim.c -o schedule_sim
+bash-3.2$ gcc schedule_sim.c -o schedule_sim[C[C[C[C[C[C[C[C[C[C[20P./schedule_sim
+T0:
+CPU: P1(15)
+QUEUE:
+T2:
+CPU: P1(13)
+QUEUE: P2(6)
+T5:
+CPU: P2(3)
+QUEUE: P1(13) P3(2)
+T6:
+CPU: P3(0)
+QUEUE: P1(13) P2(3)
+T9:
+CPU: P2(0)
+QUEUE: P1(3)
+T10:
+CPU: P2(0)
+QUEUE: P1(3) P4(9)
+T12:
+CPU: P1(0)
+QUEUE: P4(9)
+T21:
+CPU: P4(0)
+QUEUE:
+bash-3.2$ ./schedule_sim[C[C[C[C[C[C[C[C[C[Cgcc schedule_sim.c -o schedule_sim
+bash-3.2$ gcc schedule_sim.c -o schedule_sim[C[C[C[C[C[C[C[C[C[C[20P./schedule_sim
+T0:
+CPU: P1(15)
+QUEUE:
+T2:
+CPU: P1(13)
+QUEUE: P2(6)
+T5:
+CPU: P1(10)
+QUEUE: P2(6) P3(2)
+T10:
+CPU: P2(1)
+QUEUE: P1(10) P3(2) P4(9)
+T10:
+CPU: P2(0)
+QUEUE: P1(10) P3(2) P4(9)
+T18:
+CPU: P3(0)
+QUEUE: P1(4) P4(9)
+T22:
+CPU: P1(0)
+QUEUE: P4(9)
+T32:
+CPU: P4(0)
+QUEUE:
+bash-3.2$ exit
+exit
+
+Script done on Tue Feb 28 11:50:56 2017

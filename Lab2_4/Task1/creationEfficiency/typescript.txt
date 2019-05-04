@@ -1,0 +1,17 @@
+Script started on Thu 16 Feb 2017 12:31:48 PM PST
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task1/creationEfficiency[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task1/creationEfficciency[00m$ gcc forkCreationTest.c -o [K forkCreationTest
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task1/creationEfficiency[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task1/creationEfficciency[00m$ gcc threadCreationTest.c -o threadCreationTest -lpthread
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task1/creationEfficiency[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task1/creationEfficciency[00m$ ./fr[KorkCreationTest 
+Start time: Thu Feb 16 12:32:13 2017
+
+End time: Thu Feb 16 12:32:29 2017
+
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task1/creationEfficiency[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task1/creationEfficciency[00m$ ./threadCreationTest 
+Start time: Thu Feb 16 12:32:33 2017
+
+End time: Thu Feb 16 12:32:41 2017
+
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task1/creationEfficiency[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task1/creationEfficciency[00m$ exit
+exit
+
+Script done on Thu 16 Feb 2017 12:32:57 PM PST

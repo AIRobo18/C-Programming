@@ -1,0 +1,17 @@
+Script started on Thu 16 Feb 2017 12:31:48 PM PST
+ciency$bgccuforkCreationTest.cu-oBforkCreationTestomp362/Lab4/Task1/creationEffic
+ciency$bgccuthreadCreationTest.cl-oxthreadCreationTest6-lpthreadsk1/creationEffic
+ciency$b./forkCreationTestVirtualBox:~/Documents/Comp362/Lab4/Task1/creationEffic
+Start time: Thu Feb 16 12:32:13 2017
+
+End time: Thu Feb 16 12:32:29 2017
+
+ciency$b./threadCreationTestrtualBox:~/Documents/Comp362/Lab4/Task1/creationEffic
+Start time: Thu Feb 16 12:32:33 2017
+
+End time: Thu Feb 16 12:32:41 2017
+
+ciency$bexit@robertubuntu-VirtualBox:~/Documents/Comp362/Lab4/Task1/creationEffic
+exit
+
+Script done on Thu 16 Feb 2017 12:32:57 PM PST

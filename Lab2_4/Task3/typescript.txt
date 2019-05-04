@@ -1,0 +1,198 @@
+Script started on Mon 20 Feb 2017 02:41:38 PM PST
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ gcc allocateeMatrixMultiplicationThread.c -o aa[KllocateMatrixMultiplicationThread -lpthread
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ ./allocateMaatrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+0 0 27 
+0 45 36 
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ ./allocateMaatrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+41 34 27 
+54 45 36 
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ ./allocateMaatrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 18 
+0 34 27 
+54 45 36 
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ ./allocateMaatrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+0 0 0 
+0 0 36 
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ ./allocateMaatrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+41 34 27 
+54 45 36 
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ ./allocateMaatrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+0 0 0 
+0 0 36 
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ ./allocateMaatrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+0 0 0 
+0 0 36 
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ ./allocateMaatrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+0 0 0 
+54 0 36 
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ ./allocateMaatrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+0 0 0 
+0 0 36 
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ ./allocateMaatrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+0 0 0 
+54 0 36 
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ ./allocateMaatrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+0 0 0 
+54 0 36 
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ ./allocateMaatrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 18 
+41 34 27 
+0 45 36 
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab4/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab4/Task3[00m$ exit
+exit
+
+Script done on Mon 20 Feb 2017 02:42:05 PM PST

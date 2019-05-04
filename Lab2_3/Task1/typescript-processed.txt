@@ -1,0 +1,25 @@
+Script started on Tue 14 Feb 2017 11:37:45 AM PST
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab3/Task1$ scriptstypescriptSender.txt
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab3/Task1$ exittypescript.txt | perl -pe 's/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' | col -b > typescript
+
+./proc_hier
+I am the parent 3989
+I am the child 1.1: 3990
+-1 from wait(NULL) with errno = 10
+-1 from wait(NULL) with errno = 10
+Child 1.1.2 complete
+I am the child 1.1.1: 3991, my parent is 3990
+Child 1.1.1 complete
+Child 1.1 Complete
+I am the parent of 1.2
+I am the child 1.2: 3993, my parent is 3989
+I am the child 1.2.2: 3995, my parent is: 3993
+I am the child 1.2.1: 3994, my parent is: 3993
+-1 from wait(NULL) with errno = 10
+Child 1.2.2 complete
+Child 1.2.1 complete
+Child 1.2 complete
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab3/Task1$ exit
+exit
+
+Script done on Tue 14 Feb 2017 11:37:56 AM PST

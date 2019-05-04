@@ -1,0 +1,31 @@
+Script started on Thu 23 Feb 2017 01:17:02 PM PST
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab5/Task1[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab5/Task1[00m$ exitcat typescriipt.txt | perl -pe 's/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' | col -b > typescriptt-processed.txt[A[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab5/Task1[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab5/Task1[00m$ script typescript.txt[K
+[K[A[C[C[C[C[C[C[C[C[C[C[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab5/Task1[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab5/Task1[00m$ cat typescript.txt | perl -pe 's/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' | col -b > typescriptt-processed.txt[A[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab5/Task1[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab5/Task1[00m$ [7Pexit
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kexitcat typescriipt.txt | perl -pe 's/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' | col -b > typescriptt-processed.txt[A[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab5/Task1[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab5/Task1[00m$ script typescript.txt[K
+[K[A[C[C[C[C[C[C[C[C[C[C[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab5/Task1[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab5/Task1[00m$ cat typescript.txt | perl -pe 's/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' | col -b > typescriptt-processed.txt[A[A]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab5/Task1[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab5/Task1[00m$ [7Pexit
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgcc CPUBurstt.c -o CPUBurst
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab5/Task1[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab5/Task1[00m$ ./CPUBurst  [A
+Enter the alpha:
+.26
+Enter the CPU bursts:
+10 8 9 12
+Current: 9.480000
+Current: 9.355200
+Current: 10.042848
+1 2 3 5 4 4 7 3 12
+Current: 7.691708
+Current: 6.211864
+Current: 5.376779
+Current: 5.278816
+Current: 4.946324
+Current: 4.700280
+Current: 5.298207
+Current: 4.700673
+Current: 6.598498
+Current: 6.598498
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab5/Task1[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab5/Task1[00m$ exit
+exit
+
+Script done on Thu 23 Feb 2017 01:17:50 PM PST

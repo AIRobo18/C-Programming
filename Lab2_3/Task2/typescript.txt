@@ -1,0 +1,53 @@
+Script started on Mon 13 Feb 2017 12:41:21 PM PST
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab3/Task2[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab3/Task2[00m$ gcc -g pipe .c -o pipe
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab3/Task2[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab3/Task2[00m$ ./pipe 
+Enter message:
+hi
+PID 3179 Sending Message: hi
+PID 3180 Recieved Message: hi
+Enter message:
+stop
+PID 3180 Sending Message: stop
+PID 3181 Recieved Message: stop
+Enter message:
+stop
+PID 3179 Sending Message: stop
+PID 3182 Recieved Message: stop
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab3/Task2[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab3/Task2[00m$ ./pipe 
+Enter message:
+stop
+PID 3183 Sending Message: stop
+PID 3184 Recieved Message: stop
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab3/Task2[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab3/Task2[00m$ ./pipe 
+Enter message:
+this
+PID 3185 Sending Message: this
+PID 3186 Recieved Message: this
+Enter message:
+is 
+PID 3186 Sending Message: is 
+PID 3187 Recieved Message: is 
+Enter message:
+annoying
+PID 3187 Sending Message: annoying
+PID 3188 Recieved Message: annoying
+Enter message:
+stop  
+PID 3188 Sending Message: stop
+PID 3189 Recieved Message: stop
+Enter message:
+stop
+PID 3187 Sending Message: stop
+PID 3190 Recieved Message: stop
+Enter message:
+stop
+PID 3186 Sending Message: stop
+PID 3191 Recieved Message: stop
+Enter message:
+stop
+PID 3185 Sending Message: stop
+PID 3192 Recieved Message: stop
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab3/Task2[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab3/Task2[00m$ exit
+exit
+
+Script done on Mon 13 Feb 2017 12:42:06 PM PST

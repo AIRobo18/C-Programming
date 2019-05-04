@@ -1,0 +1,1 @@
+Initially running the program with the set number of threads to 10, I did not notice much of a difference between the two. They both ended quite quickly. Although this was not the case when I set the number of cases to 100000. I first ran the thread code, and it finished in just over a second. Although when I ran the fork code, it took about 5 seconds to complete.

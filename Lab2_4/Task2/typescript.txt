@@ -1,0 +1,119 @@
+Script started on Mon 20 Feb 2017 02:09:19 PM PST
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab4/Task2$ gcc matrixMultiplicationThread.c -o matrixMultiplicationThread -lpthread
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab4/Task2$ ./matrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+0 34 27 
+54 0 36 
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab4/Task2$ ./matrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+41 0 27 
+54 45 36 
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab4/Task2$ ./matrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+41 34 27 
+0 0 36 
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab4/Task2$ ./matrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+41 34 27 
+54 45 36 
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab4/Task2$ ./matrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+0 0 0 
+54 0 36 
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab4/Task2$ ./matrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+41 0 27 
+54 45 36 
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab4/Task2$ ./matrixMultiplicationThread 
+M: 3, K: 2, N: 3
+
+MATRIX A
+1 4 
+2 5 
+3 6 
+
+MATRIX B
+8 7 6 
+5 4 3 
+
+MATRIX C
+0 0 0 
+0 34 27 
+54 45 36 
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab4/Task2$ exit
+exit
+exit
+
+Script done on Mon 20 Feb 2017 02:10:23 PM PST

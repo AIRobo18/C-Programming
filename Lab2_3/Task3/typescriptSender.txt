@@ -1,0 +1,12 @@
+Script started on Tue 14 Feb 2017 11:40:05 AM PST
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab3/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab3/Task3[00m$ ./npipe_combbined 
+Enter line: quit
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab3/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab3/Task3[00m$ ./c[Knpipe_combbined 
+Enter line: hi
+Enter line: coo
+Enter line: cool
+Enter line: quit
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab3/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab3/Task3[00m$ exit
+exit
+
+Script done on Tue 14 Feb 2017 11:40:50 AM PST
