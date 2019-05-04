@@ -1,0 +1,65 @@
+Script started on Thu 30 Mar 2017 12:41:38 PM PDT
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ exitpescript
+
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ exitpescript
+
+appedFile.ca-o memoryMappedFile
+pedFilebuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ ./memoryMapp
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 20061: 1
+Byte at offset 1 is '
+'
+Segmentation fault (core dumped)
+pedFilebuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ ./memoryMapp
+Playing with pages of size 4096
+Enter file name: 500
+Failed to open file!: No such file or directory
+pedFilebuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ ./memoryMapp
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 20061: 4002
+Byte at offset 4002 is 'j'
+Segmentation fault (core dumped)
+pedFilebuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ ./memoryMapp
+Playing with pages of size 4096
+Enter file name: input.txt 20000
+Enter file offset between 0 and 20061: Byte at offset 20000 is 'i'
+Byte at offset 20000 is 'i'
+pedFilebuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ ./memoryMapp
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 20061: 10004
+Byte at offset 10004 is 's'
+Byte at offset 10004 is 's'
+pedFilebuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ ./memoryMapp
+Playing with pages of size 4096
+Enter file name: input.txt 4096
+Enter file offset between 0 and 20061: Byte at offset 4096 is 'a'
+Byte at offset 4096 is 'a'
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ 1
+1: command not found
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ 1
+1: command not found
+pedFilebuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ ./memoryMapp
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 20061: 4095
+Byte at offset 4095 is 'r'
+Segmentation fault (core dumped)
+pedFilebuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ ./memoryMapp
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 20061: 4096
+Byte at offset 4096 is 'a'
+Byte at offset 4096 is 'a'
+pedFilebuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ ./memoryMapp
+Playing with pages of size 4096
+Enter file name: input.txt
+Enter file offset between 0 and 20061: 4097
+Byte at offset 4097 is ' '
+Byte at offset 4097 is ' '
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab9/Task1$ exit
+exit
+
+Script done on Thu 30 Mar 2017 12:47:42 PM PDT

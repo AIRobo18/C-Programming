@@ -1,0 +1,351 @@
+Script started on Tue 21 Mar 2017 11:46:39 AM PDT
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task3[00m$ gcc -c inverrtedPageTable.c -o invertedPageTable.o
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task3[00m$ ar rcs libi nvertedPageTable.a invertedPageTable.o
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task3[00m$ nm libinverttedPageTable.a 
+
+invertedPageTable.o:
+                 U free
+0000000000000000 T initInverted
+                 U malloc
+00000000000002ec T releaseInverted
+0000000000000018 C table
+000000000000000c C table_page
+                 U time
+0000000000000107 T translate
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task3[00m$ gcc testInv [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[KInv ertedPageTable.c -L. -linvertedPageTable -o testInc[KvPageTable
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task3[00m$ ./testInvPaggeTable 
+
+LOGICAL ADDRESS
+PID: 384 | Page: 7 | Offset: 10
+
+PHYSICAL ADDRESS
+Index: 0 | Offset: 10
+
+LOGICAL ADDRESS
+PID: 764 | Page: 7 | Offset: 3
+
+PHYSICAL ADDRESS
+Index: 1 | Offset: 3
+
+LOGICAL ADDRESS
+PID: 23 | Page: 9 | Offset: 7
+
+PHYSICAL ADDRESS
+Index: 2 | Offset: 7
+
+LOGICAL ADDRESS
+PID: 12 | Page: 3 | Offset: 7
+
+PHYSICAL ADDRESS
+Index: 3 | Offset: 7
+
+LOGICAL ADDRESS
+PID: 874 | Page: 3 | Offset: 6
+
+PHYSICAL ADDRESS
+Index: 4 | Offset: 6
+
+LOGICAL ADDRESS
+PID: 926 | Page: 5 | Offset: 6
+
+PHYSICAL ADDRESS
+Index: 5 | Offset: 6
+
+LOGICAL ADDRESS
+PID: 847 | Page: 10 | Offset: 8
+
+PHYSICAL ADDRESS
+Index: 6 | Offset: 8
+
+LOGICAL ADDRESS
+PID: 125 | Page: 6 | Offset: 1
+
+PHYSICAL ADDRESS
+Index: 7 | Offset: 1
+
+LOGICAL ADDRESS
+PID: 88 | Page: 9 | Offset: 4
+
+PHYSICAL ADDRESS
+Index: 8 | Offset: 4
+
+LOGICAL ADDRESS
+PID: 652 | Page: 5 | Offset: 2
+
+PHYSICAL ADDRESS
+Index: 9 | Offset: 2
+
+LOGICAL ADDRESS
+PID: 98 | Page: 3 | Offset: 3
+
+PHYSICAL ADDRESS
+Index: 10 | Offset: 3
+
+LOGICAL ADDRESS
+PID: 757 | Page: 2 | Offset: 10
+
+PHYSICAL ADDRESS
+Index: 11 | Offset: 10
+
+LOGICAL ADDRESS
+PID: 928 | Page: 8 | Offset: 7
+
+PHYSICAL ADDRESS
+Index: 12 | Offset: 7
+
+LOGICAL ADDRESS
+PID: 498 | Page: 4 | Offset: 7
+
+PHYSICAL ADDRESS
+Index: 13 | Offset: 7
+
+LOGICAL ADDRESS
+PID: 684 | Page: 10 | Offset: 4
+
+PHYSICAL ADDRESS
+Index: 14 | Offset: 4
+
+LOGICAL ADDRESS
+PID: 20 | Page: 1 | Offset: 9
+
+PHYSICAL ADDRESS
+Index: 15 | Offset: 9
+
+LOGICAL ADDRESS
+PID: 716 | Page: 1 | Offset: 2
+
+PHYSICAL ADDRESS
+Index: 16 | Offset: 2
+
+LOGICAL ADDRESS
+PID: 922 | Page: 6 | Offset: 1
+
+PHYSICAL ADDRESS
+Index: 17 | Offset: 1
+
+LOGICAL ADDRESS
+PID: 194 | Page: 1 | Offset: 7
+
+PHYSICAL ADDRESS
+Index: 18 | Offset: 7
+
+LOGICAL ADDRESS
+PID: 744 | Page: 2 | Offset: 10
+
+PHYSICAL ADDRESS
+Index: 19 | Offset: 10
+
+LOGICAL ADDRESS
+PID: 937 | Page: 3 | Offset: 2
+
+PHYSICAL ADDRESS
+Index: 20 | Offset: 2
+
+LOGICAL ADDRESS
+PID: 438 | Page: 9 | Offset: 8
+
+PHYSICAL ADDRESS
+Index: 21 | Offset: 8
+
+LOGICAL ADDRESS
+PID: 475 | Page: 2 | Offset: 9
+
+PHYSICAL ADDRESS
+Index: 22 | Offset: 9
+
+LOGICAL ADDRESS
+PID: 396 | Page: 10 | Offset: 5
+
+PHYSICAL ADDRESS
+Index: 23 | Offset: 5
+
+LOGICAL ADDRESS
+PID: 444 | Page: 4 | Offset: 7
+
+PHYSICAL ADDRESS
+Index: 24 | Offset: 7
+
+LOGICAL ADDRESS
+PID: 841 | Page: 5 | Offset: 6
+
+PHYSICAL ADDRESS
+Index: 25 | Offset: 6
+
+LOGICAL ADDRESS
+PID: 140 | Page: 5 | Offset: 8
+
+PHYSICAL ADDRESS
+Index: 26 | Offset: 8
+
+LOGICAL ADDRESS
+PID: 356 | Page: 5 | Offset: 6
+
+PHYSICAL ADDRESS
+Index: 27 | Offset: 6
+
+LOGICAL ADDRESS
+PID: 802 | Page: 2 | Offset: 6
+
+PHYSICAL ADDRESS
+Index: 28 | Offset: 6
+
+LOGICAL ADDRESS
+PID: 321 | Page: 7 | Offset: 9
+
+PHYSICAL ADDRESS
+Index: 29 | Offset: 9
+
+LOGICAL ADDRESS
+PID: 417 | Page: 3 | Offset: 9
+
+PHYSICAL ADDRESS
+Index: 30 | Offset: 9
+
+LOGICAL ADDRESS
+PID: 925 | Page: 8 | Offset: 1
+
+PHYSICAL ADDRESS
+Index: 31 | Offset: 1
+
+LOGICAL ADDRESS
+PID: 37 | Page: 3 | Offset: 1
+
+PHYSICAL ADDRESS
+Index: 32 | Offset: 1
+
+LOGICAL ADDRESS
+PID: 469 | Page: 2 | Offset: 10
+
+PHYSICAL ADDRESS
+Index: 33 | Offset: 10
+
+LOGICAL ADDRESS
+PID: 774 | Page: 4 | Offset: 8
+
+PHYSICAL ADDRESS
+Index: 34 | Offset: 8
+
+LOGICAL ADDRESS
+PID: 446 | Page: 7 | Offset: 10
+
+PHYSICAL ADDRESS
+Index: 35 | Offset: 10
+
+LOGICAL ADDRESS
+PID: 10 | Page: 7 | Offset: 7
+
+PHYSICAL ADDRESS
+Index: 36 | Offset: 7
+
+LOGICAL ADDRESS
+PID: 302 | Page: 4 | Offset: 6
+
+PHYSICAL ADDRESS
+Index: 37 | Offset: 6
+
+LOGICAL ADDRESS
+PID: 820 | Page: 10 | Offset: 5
+
+PHYSICAL ADDRESS
+Index: 38 | Offset: 5
+
+LOGICAL ADDRESS
+PID: 940 | Page: 2 | Offset: 6
+
+PHYSICAL ADDRESS
+Index: 39 | Offset: 6
+
+LOGICAL ADDRESS
+PID: 229 | Page: 8 | Offset: 1
+
+PHYSICAL ADDRESS
+Index: 40 | Offset: 1
+
+LOGICAL ADDRESS
+PID: 985 | Page: 9 | Offset: 1
+
+PHYSICAL ADDRESS
+Index: 41 | Offset: 1
+
+LOGICAL ADDRESS
+PID: 626 | Page: 6 | Offset: 10
+
+PHYSICAL ADDRESS
+Index: 42 | Offset: 10
+
+LOGICAL ADDRESS
+PID: 582 | Page: 10 | Offset: 6
+
+PHYSICAL ADDRESS
+Index: 43 | Offset: 6
+
+LOGICAL ADDRESS
+PID: 995 | Page: 5 | Offset: 1
+
+PHYSICAL ADDRESS
+Index: 44 | Offset: 1
+
+LOGICAL ADDRESS
+PID: 256 | Page: 1 | Offset: 6
+
+PHYSICAL ADDRESS
+Index: 45 | Offset: 6
+
+LOGICAL ADDRESS
+PID: 622 | Page: 8 | Offset: 5
+
+PHYSICAL ADDRESS
+Index: 46 | Offset: 5
+
+LOGICAL ADDRESS
+PID: 614 | Page: 2 | Offset: 5
+
+PHYSICAL ADDRESS
+Index: 47 | Offset: 5
+
+LOGICAL ADDRESS
+PID: 327 | Page: 10 | Offset: 3
+
+PHYSICAL ADDRESS
+Index: 48 | Offset: 3
+
+LOGICAL ADDRESS
+PID: 203 | Page: 7 | Offset: 9
+
+PHYSICAL ADDRESS
+Index: 49 | Offset: 9
+
+LOGICAL ADDRESS
+PID: 959 | Page: 9 | Offset: 9
+
+PHYSICAL ADDRESS
+Index: 0 | Offset: 9
+
+LOGICAL ADDRESS
+PID: 754 | Page: 9 | Offset: 4
+
+PHYSICAL ADDRESS
+Index: 0 | Offset: 4
+
+LOGICAL ADDRESS
+PID: 334 | Page: 4 | Offset: 5
+
+PHYSICAL ADDRESS
+Index: 0 | Offset: 5
+
+LOGICAL ADDRESS
+PID: 568 | Page: 7 | Offset: 1
+
+PHYSICAL ADDRESS
+Index: 0 | Offset: 1
+
+LOGICAL ADDRESS
+PID: 47 | Page: 9 | Offset: 4
+
+PHYSICAL ADDRESS
+Index: 0 | Offset: 4
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task3[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task3[00m$ exit
+exit
+
+Script done on Tue 21 Mar 2017 11:49:51 AM PDT

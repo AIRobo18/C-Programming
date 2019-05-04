@@ -1,0 +1,12 @@
+Script started on Mon Mar 13 18:06:20 2017
+[?1034hbash-3.2$ gcc deadlockGraphCheck.c -o deadlockGraphCheck
+bash-3.2$ ./deadlockGraphCheck 
+0 0 1 1 
+0 0 1 0 
+0 1 0 1 
+1 0 1 0 
+>> DEADLOCKED <<
+bash-3.2$ exit
+exit
+
+Script done on Mon Mar 13 18:06:42 2017

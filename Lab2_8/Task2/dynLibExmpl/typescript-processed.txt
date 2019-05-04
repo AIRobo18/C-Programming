@@ -1,0 +1,33 @@
+Script started on Thu 16 Mar 2017 12:46:43 PM PDT
+rgccr*.cu-outestDymLibntu-VirtualBox:~/Documents/Comp362/Lab8/Task2/dynLibExmpl$
+/tmp/ccf2Vzcc.o: In function `main':
+testDyLibMain.c:(.text+0x1a): undefined reference to `dlopen'
+testDyLibMain.c:(.text+0x2a): undefined reference to `dlerror'
+testDyLibMain.c:(.text+0x55): undefined reference to `dlerror'
+testDyLibMain.c:(.text+0x66): undefined reference to `dlsym'
+testDyLibMain.c:(.text+0x7d): undefined reference to `dlerror'
+testDyLibMain.c:(.text+0xcf): undefined reference to `dlclose'
+collect2: error: ld returned 1 exit status
+rlstestDqntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab8/Task2/dynLibExmpl$
+giveMeNum.c  testDyLibMain.c  typescript.txt
+rgccr-fPICt-sharedt-nostartfilesl-oxlibgiveMeNum.somgiveMeNum.cask2/dynLibExmpl$
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab8/Task2/dynLibExmpl$
+rgccr-rdynamico-ortestDyLibMainatestDyLibMain.cs-ldlp362/Lab8/Task2/dynLibExmpl$
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab8/Task2/dynLibExmpl$
+rgccr-rdynamico-ortestDyLibMainatestDyLibMain.cs-ldlp362/Lab8/Task2/dynLibExmpl$
+robertubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab8/Task2/dynLibExmpl$
+rnmelibgiveMeNum.soubuntu-VirtualBox:~/Documents/Comp362/Lab8/Task2/dynLibExmpl$
+0000000000201030 D __bss_start
+0000000000200ed0 d _DYNAMIC
+0000000000201030 D _edata
+0000000000201030 D _end
+0000000000000450 T giveMeNum
+0000000000201000 d _GLOBAL_OFFSET_TABLE_
+00000000000004bc r __GNU_EH_FRAME_HDR
+		 U __isoc99_scanf@@GLIBC_2.7
+		 U puts@@GLIBC_2.2.5
+		 U __stack_chk_fail@@GLIBC_2.4
+rexittubuntu@robertubuntu-VirtualBox:~/Documents/Comp362/Lab8/Task2/dynLibExmpl$
+exit
+
+Script done on Thu 16 Mar 2017 12:53:42 PM PDT

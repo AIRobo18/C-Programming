@@ -1,0 +1,33 @@
+Script started on Thu 16 Mar 2017 12:46:43 PM PDT
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task2/dynLibExmpl[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task2/dynLibExmpl[00m$  gcc -[K*.c -o testDymLib
+/tmp/ccf2Vzcc.o: In function `main':
+testDyLibMain.c:(.text+0x1a): undefined reference to `dlopen'
+testDyLibMain.c:(.text+0x2a): undefined reference to `dlerror'
+testDyLibMain.c:(.text+0x55): undefined reference to `dlerror'
+testDyLibMain.c:(.text+0x66): undefined reference to `dlsym'
+testDyLibMain.c:(.text+0x7d): undefined reference to `dlerror'
+testDyLibMain.c:(.text+0xcf): undefined reference to `dlclose'
+collect2: error: ld returned 1 exit status
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task2/dynLibExmpl[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task2/dynLibExmpl[00m$  ./testDq[K[K[K[K[K[K[K[Kls
+giveMeNum.c  testDyLibMain.c  typescript.txt
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task2/dynLibExmpl[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task2/dynLibExmpl[00m$  gcc -fPIC -shared -nostartfiles -o libgiveMeNum.so giveMeNum.c
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task2/dynLibExmpl[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task2/dynLibExmpl[00m$  
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task2/dynLibExmpl[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task2/dynLibExmpl[00m$  gcc -rdynamic -o testDyLibMain testDyLibMain.c -ldl
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task2/dynLibExmpl[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task2/dynLibExmpl[00m$  
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task2/dynLibExmpl[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task2/dynLibExmpl[00m$  gcc -rdynamic -o testDyLibMain testDyLibMain.c -ldl
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task2/dynLibExmpl[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task2/dynLibExmpl[00m$  
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task2/dynLibExmpl[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task2/dynLibExmpl[00m$  nm libgiveMeNum.so
+0000000000201030 D __bss_start
+0000000000200ed0 d _DYNAMIC
+0000000000201030 D _edata
+0000000000201030 D _end
+0000000000000450 T giveMeNum
+0000000000201000 d _GLOBAL_OFFSET_TABLE_
+00000000000004bc r __GNU_EH_FRAME_HDR
+                 U __isoc99_scanf@@GLIBC_2.7
+                 U puts@@GLIBC_2.2.5
+                 U __stack_chk_fail@@GLIBC_2.4
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab8/Task2/dynLibExmpl[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab8/Task2/dynLibExmpl[00m$  exit
+exit
+
+Script done on Thu 16 Mar 2017 12:53:42 PM PDT

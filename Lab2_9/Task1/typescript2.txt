@@ -1,0 +1,20 @@
+Script started on Thu 30 Mar 2017 01:26:24 PM PDT
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab9/Task1[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab9/Task1[00m$ gcc memoryMaappedFile.c -o memoryMappedFile
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab9/Task1[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab9/Task1[00m$ ./memoryMapppedFile 
+Playing with pages of size 4096
+Enter character to replace: a
+Enter file name: input.txt
+Enter file offset between 0 and 20061: 10000
+Byte at offset 10000 is 'a'
+Byte at offset 10000 is 'a'
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab9/Task1[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab9/Task1[00m$ ./memoryMapppedFile 
+Playing with pages of size 4096
+Enter character to replace: d
+Enter file name: input.txt
+Enter file offset between 0 and 20061: 10000
+Byte at offset 10000 is 'a'
+Byte at offset 10000 is 'd'
+]0;robertubuntu@robertubuntu-VirtualBox: ~/Documents/Comp362/Lab9/Task1[01;32mrobertubuntu@robertubuntu-VirtualBox[00m:[01;34m~/Documents/Comp362/Lab9/Task1[00m$ exit
+exit
+
+Script done on Thu 30 Mar 2017 01:26:59 PM PDT

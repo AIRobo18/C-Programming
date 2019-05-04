@@ -1,0 +1,41 @@
+Script started on Mon Mar 13 20:32:41 2017
+[?1034hbash-3.2$ gcc *.c
+bash-3.2$ ./a.out in.txt 
+st
+
+REQUEST: ST
+ Available = [15 10 5 ]
+Allocation = [0 0 0 ][0 0 0 ][0 0 0 ][0 0 0 ][0 0 0 ]
+       Max = [7 5 3 ][3 2 2 ][9 0 2 ][2 2 2 ][4 3 3 ]
+      Need = [7 5 3 ][3 2 2 ][9 0 2 ][2 2 2 ][4 3 3 ]
+bo 1 0 0 0
+
+REQUEST: BO 1: [0 0 0 ]
+*APPROVED*
+bo1  1 2  5 25 25  
+
+REQUEST: BO 1: [25 25 25 ]
+*DENIED*
+bo 2 3 5 4
+
+REQUEST: BO 2: [3 5 4 ]
+*DENIED*
+bo 2   2 1 1 1
+
+REQUEST: BO 2: [1 1 1 ]
+*APPROVED*
+bo 1  1  3 1 2
+
+REQUEST: BO 1: [3 1 2 ]
+*DENIED*
+q
+
+REQUEST: Q
+ Available = [13 8 3 ]
+Allocation = [0 0 0 ][0 0 0 ][1 1 1 ][0 0 0 ][0 0 0 ]
+       Max = [7 5 3 ][3 2 2 ][9 0 2 ][2 2 2 ][4 3 3 ]
+      Need = [1 1 1 ][1 1 1 ][8 -1 1 ][1 1 1 ][1 1 1 ]
+bash-3.2$ exit
+exit
+
+Script done on Mon Mar 13 20:33:59 2017
